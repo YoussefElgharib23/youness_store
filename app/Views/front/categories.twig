@@ -1,0 +1,54 @@
+{% extends "front/layout.twig" %}
+
+
+
+
+
+{% block content %}
+
+	   <main class="page-wrapper">
+          
+            <section class="section products-list-section section-I7upaLbva51pYIX2">
+               <div class="container">
+                  <div class="app-heading">
+                     <h3 class="heading-primary">  </h3>
+                     <p class="heading-description"></p>
+                  </div>
+                  <div class="products-grid">
+
+
+                     {%  for product in products %}
+                     <div class="product-item">
+                        <a class="product-thumbnail" href="{{ path_for('website.product',{ id : product.id}) }}">
+                        <img src="{{ url.products }}{{product.thumbnail}}">
+                        </a>
+                        <div class="product-details">
+                           <div class="product-info">
+                              <h3 class="product-title">
+                                 <a href="{{ path_for('website.product',{ id : product.id}) }}">{{ product.name }}</a>
+                              </h3>
+                              <div class="product-price">
+                                 <span class="currency-value before">
+                                 <span class="value">{{ product.price }}</span><span class="currency">&nbsp;د.م.‏</span>
+                                 </span>
+                                 <span class="currency-value after">
+                                 <span class="value">{{ product.discount }}</span><span class="currency">&nbsp;د.م.‏</span>
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="product-actions">
+                              <a class="button small-button secondary-button" href="{{ path_for('website.product',{ id : product.id}) }}">
+                              أطلب الآن
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     {% endfor %}
+                  </div>
+               </div>
+            </section>
+           
+         </main>
+         <!-- App footer -->
+{% endblock %}  
+            

@@ -1,0 +1,96 @@
+{% extends "admin/layout.twig" %}
+{% block title %}  edit category{% endblock %}
+{% block content %}	
+
+
+
+
+<!-- Main content -->
+<div class="content-wrapper">
+
+
+				<!-- Page header -->
+				<div class="page-header page-header-transparent">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h1> <span class="text-semibold">categorie</span></h1>
+							<ul class="breadcrumb position-left">
+								   
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+
+
+<!-- Content area -->
+<div class="content">
+			        {% include "admin/elements/flash.twig" %}
+			  
+			      
+    <div class="panel panel-flat">
+        <div class="panel-body">
+            <form method="post" id="createProductCategory" action="{{path_for('products.categories.edit' ,  {id : categorie.id})}}" enctype='multipart/form-data'>
+               <div id="result"></div>
+                <fieldset class="content-group">
+                    <legend class="text-bold"> edit category</legend>
+                    <div class="form-group">
+                        <label class="control-label">categorie name</label>
+                        <input type="text" value="{{categorie.name}}" class="form-control frequired" name="name"  />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">categorie slug</label>
+                        <input type="text" value="{{categorie.slug}}" class="form-control frequired" name="slug"  />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label">Staus</label>
+                        <select class="form-control frequired" name="active" id="active">
+                            <option {% if categorie.active == '1' %} selected="selected"{% endif %} value="1">Active</option>
+                            <option {% if categorie.active == '00' %} selected="selected"{% endif %} value="00">Not active</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="file" name="image" id="image" style="display: none;">
+                        <label class="btn btn-danger btn-rounded" for="image"> <i class="icon-image2 position-left"></i> صورة</label>
+                    </div>
+
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-primary">
+                    update
+                    <i class="icon-arrow-left13 position-right"></i>
+                    </button>
+                    </div>
+                </fieldset>								
+            </form>
+        </div>
+    </div>        
+			      
+			      
+			      
+			        
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,191 @@
+{% extends "admin/layout.twig" %}
+
+
+{% block content %}
+
+   
+<!-- Page header -->
+<div class="page-header page-header-default ">
+<div class="page-header-content">
+
+<div class="page-title">
+<h1> <span class="text-semibold"><i class="icon-arrow-right6 position-left goback"></i>
+ Settings
+</span></h1>
+</div>
+
+<div class="heading-elements">
+
+
+
+</div>
+</div>
+</div>
+<!-- /page header -->
+ 
+     
+		
+<div class="manager-wrapper">
+<div class="col-md-12">
+    <div class="panel panel-flat">
+        <div class="panel-heading no-padding-bottom">
+            <h3 class="panel-title">Settings</h3>
+            <p class="no-margin-bottom"></p>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" id="generalSettings" method="post" action="{{path_for('settings.profile')}}" enctype="multipart/form-data">
+                    <legend class="text-bold"></legend>
+                    
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">e-mail</label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" name="email" placeholder="Enter your email address"  value="{{email}}">
+                        </div>
+                    </div>     
+                    
+                    <div class="form-group">
+                        <label class="control-label col-lg-3"> password  </label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" name="password"  />
+                        </div>
+                    </div>
+                    
+                    
+                </fieldset>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-block btn-primary">Saving changes</button>
+                </div>
+                <br>
+                <div id="result"></div>
+            </form>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" id="generalSettings" method="post" action="{{path_for('settings.update')}}" enctype="multipart/form-data">
+
+                <fieldset class="content-group">
+                    <legend class="text-bold"></legend>
+                    
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">website logo</label>
+                        <div class="col-lg-9">
+                            <div class="col-lg-3">
+                               <label for="logo" class="btn btn-danger btn-rounded"><i class="icon-image2 position-left"></i>
+                                Choose list</label>
+                               <input name="logo" id="logo" accept="image/jpg, image/jpeg, image/png" style="visibility:hidden;" type="file">
+                               <div class="logo-settings-preview"> 
+                                        <img src="">
+                                </div>
+                                
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                         <label class="control-label col-lg-3"></label>
+                         <div class="setting-preview-img">
+                            {% if options.logo is not empty %}
+                            <img width='200px' src='/uploads/media/{{ options.logo }}' />
+                            {% endif %}
+                        </div>
+                        </div>
+                        
+                    </div>
+                    
+         
+         
+                    <hr>
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">website name</label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control frequired" name="name" placeholder="Web site name" value="{{options.name}}">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">the description line at the top</label>
+                        <div class="col-lg-9">
+                         <input type="text" class="form-control" name="tagline" placeholder="Description line"   value="{{options.tagline}}">
+                        </div>
+                    </div>  
+                        
+                 
+
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">telephone number</label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" name="phone"  value="{{options.phone}}" placeholder="enter your phone number ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-lg-3">e-mail</label>
+                        <div class="col-lg-9">
+                <input type="text" class="form-control" name="email" placeholder="enter your email address"  value="{{options.email}}">
+                        </div>
+                    </div>     
+                 
+                       <div class="form-group">
+                        <label class="control-label col-lg-3">  facebook pixel </label>
+                        <div class="col-lg-9">
+                        <textarea class='form-control' name="pixel" cols="30" rows="10">{{options.pixel}}</textarea>                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-lg-3"> google analitycs </label>
+                        <div class="col-lg-9">
+                        <textarea class='form-control' name="stats" cols="30" rows="10">{{options.stats}}</textarea>
+                        </div>
+                    </div>    
+                     <div class="form-group">
+                        <label class="control-label col-lg-3"> color </label>
+                        <div class="col-lg-9">
+                        <input type="color" id="color" name="color" value="{{options.color}}">
+                        </div>
+                    </div>    
+
+                 
+
+             
+
+                                 <div class="form-group">
+                        <label class="control-label col-lg-3"> bottom image </label>
+                        <div class="col-lg-9">
+                            <div class="col-lg-3">
+                               <label for="banner_footer" class="btn btn-danger btn-rounded"><i class="icon-image2 position-left"></i>
+                                     select image 
+                                </label>
+                               <input name="banner_footer" id="banner_footer" accept="image/jpg, image/jpeg, image/png" style="visibility:hidden;" type="file">
+                         
+                        </div>
+                        </div>
+                        <div class="col-md-12">
+                         <label class="control-label col-lg-3"></label>
+                         <div class="setting-preview-img">
+                            {% if options.banner_footer is not empty %}
+                            <img width='200px' src='/uploads/media/{{ options.banner_footer }}' />
+                            {% endif %}
+                        </div>
+                        </div>
+                        
+                    </div>
+                    
+                 
+            
+                </fieldset>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-block btn-primary">Saving changes</button>
+                </div>
+                <br>
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,445 @@
+{% extends "front/layout.twig" %}
+
+
+
+{% block bodyClass %}
+class='product-single'
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="breadcrumb" style="margin-bottom: 14px;"><div class="container">
+
+<ul class="list-unstyled breadcrumb-list"><a href="/"><i class="fa fa-home" aria-hidden="true"></i>
+</a> 
+
+            <li><span style="padding-right:10px;">{{product.name}}</span></li>
+
+
+
+            </ul></div></div>
+
+
+<style>
+.cmd_wrapper {
+    background: #0000009c;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 25px;
+}
+.cmd_wrapper form {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+
+
+.cmd_wrapper input {
+    margin-bottom: 10px;
+}
+   .single-product .product-wrapper .product-details {width: calc(100% - 650px);margin-right: 45px;}
+
+
+   @media (max-width: 600px) and (min-width: 0px) {
+   .notice-bar.mobile-notice-bar span {
+   color: white !important;
+       text-align: center !important;
+       display: block;
+       line-height: 30px;
+   }
+
+   .product-details {
+       overflow: hidden;
+       max-width: 100% !important;
+       width: 100% !important;
+   }
+
+body {
+    overflow-x: hidden;
+}
+
+ul.list-preview {
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+.single-product .preview img {
+    max-width: 100% !important;
+}
+.single-product .preview {
+    width: 100% !important;
+}
+
+.single-product .product-wrapper .product-preview {
+    width: 100%;
+}
+
+
+.cmd_wrapper {
+    padding: 7px;
+}
+
+
+   }
+input.btn.btn-block.btn-submit {
+    background: rgb(222, 80, 129);
+    width: 100%;
+    height: 45px;
+    border-radius: 2px;
+    color: white;
+    font-size: 14px;
+}
+
+
+.cmd_wrapper h1 {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cmd_wrapper form {
+    max-width: 630px;
+    display: inline-block;
+
+}
+
+.cmd_wrapper {
+    text-align: center !important;
+}
+
+li.thumbnail-item:hover {
+    cursor:pointer;
+}
+
+span.after.currency-value {
+    color: #de5081;
+}
+
+a#close_cmd {
+    position: absolute;
+    font-size: 22px;
+    margin-right: 5px;
+    color: #de5081;
+}
+
+
+.product-item .product-price .before {
+    display: inline-block !important;
+    margin-left: 15px !important;
+}
+.product-item .product-price .after {
+    display: inline-block !important;
+}
+.product-item .product-price {
+    display: block !important;
+    text-align: center !important;
+}
+
+select#type {
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 0;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+    padding-right: 30px;
+    -moz-appearance: initial !important;
+    -webkit-appearance: none;
+    appearance: initial !important;
+}
+
+.quantity_area {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label.quantity_label {
+    margin-left: 25px;
+    height: 25px !important;
+    vertical-align: middle;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+select#type {
+    margin-top: 0;
+}
+
+
+
+select#type {
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    padding-right: 70px;
+}
+
+div#phoneAlert {
+    background: #b51a4f;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    line-height: 44px;
+}
+
+.stats{
+   padding: 10px 0;
+}
+.stars{
+   margin-top: 4px;
+   margin-left: 5px;
+}
+.stats, .stars{
+   display: flex;
+   justify-content: flex-end;
+   line-height: 1.2;
+}
+.stat{
+   display: flex;
+   padding-left: 5px;
+   padding-right: 10px;
+}
+.border-right{
+   border-right: 1px #CCC solid;
+}
+
+.stars-quantity{
+   color: #d0011b;
+}
+.stars-quantity,
+.rating-quantity{
+   border-bottom: 1px red solid;
+   margin-right: 5px;
+}
+.sold-quantity{
+   margin-right: 5px;
+}
+.stars-quantity,
+.rating-quantity,
+.sold-quantity{
+   font-size: 16px;
+}
+.icon-rating-solid{
+   height: 14px;
+   width: 14px;
+}
+
+.flash{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   padding: 0 10px;
+   width: 100%;
+   height: 36px;
+   background-image: url(/assets/flashBackground.jpg),
+                     linear-gradient(-90deg,#f0451e 9%,#f32424 96%);
+}
+.clock{
+   margin-top: 8px !important;
+}
+.flash-sale-logo,
+.shopee-svg-icon{
+   color: #FFF;
+   margin-top: 8px;
+}
+.shopee-svg-icon{
+   margin-top: 3px;
+}
+.ends-in{
+   color: #FFF;
+   margin-left: 10px;
+}
+.time-container{
+   display: flex;
+   line-height: 35px;
+}
+.time-counter{
+   display: flex;
+   height: 70%;
+   margin-top: 6px;
+   margin-left: 5px;
+   line-height: 23px;
+}
+.digits-container{
+   background-color: #000;
+   margin-left: 5px;
+   padding: 0 2px;
+   border-radius: 5px;
+}
+.digit-container{
+   color: #FFF;
+   font-size: 18px;
+}
+.shopee-rating-stars__primary-star{
+   color: red !important;
+}
+.fa-star{
+   color: #d0011b;
+   margin-left: 2px;
+}
+
+.digits-container {
+    min-width: 30px !important;
+    text-align: center;
+}
+
+.horizontal-badge{display:inline-block;position:relative;background-color:#ee4d2d;border-top-right-radius:2px;border-bottom-right-radius:2px;padding:.1875rem .25rem;text-transform:capitalize;color:#fff;font-weight:500;font-size:13px;line-height:1;white-space:nowrap;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Toast messages -->
+         <div id="app">
+   
+   <div class="toast">
+      <div class="alert alert-">
+         <div class="container">
+            <div class="alert-icon"></div>
+            <div class="alert-body">
+               <div class="alert-message">
+                  <ul class="list-unstyled"></ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <main class="page-wrapper">
+      <div class="single-product">
+         <div class="single-product">
+            <div class="container">
+               <div class="product-wrapper">
+                  <div class="product-preview">
+                     <div class="product-section preview-wrapper">
+                        <!----> 
+                        <div class="product-slider product-slider-desktop">
+                           <div class="preview">
+                                <img src="{{url.products}}{{product.thumbnail}}" >
+                           </div>
+                           <ul class="list-preview owl-carousel">
+                                {% for item in product.galleryimages %}
+                                <li class="thumbnail-item" >
+                                    <img src="{{url.products}}{{item}}" />
+                                </li>
+                                {% endfor %}
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="product-details">
+                     <div class="product-section">
+                        
+                        <h1 class="single-title"><div class="horizontal-badge shopee-preferred-seller-badge horizontal-badge--no-triangle _1hOh3l _1lhNV3 items-center">Preferred</div> {{ product.name }}  </h1>
+                     </div>
+                     <div>
+                        <div class="stats">
+                           <div class="stat">
+                              <span>Sold</span>
+                              <span class="sold-quantity">247</span>
+                           </div>
+                           <div class="stat border-right">
+                              <span>Ratings</span>
+                              <span class="rating-quantity">154</span>
+                           </div>
+                           <div class="stat border-right">
+                              <div class="stars">
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                                 <i class="fa fa-star" aria-hidden="true"></i>
+                              </div>
+                              <span class="stars-quantity">4.9</span>
+                           </div>
+                        </div>
+                        <div class="flash">
+                           <div class="time-container">
+                              <div class="time-counter">
+                                 <div class="digits-container">
+                                    <span id="hours" class="digit-container">0</span>
+                                 </div>
+                                 <div class="digits-container">
+                                    <span id="minutes" class="digit-container">0</span>
+                                 </div>
+                                 <div class="digits-container">
+                                    <span id="seconds" class="digit-container">0</span>
+                                 </div>
+                              </div>
+                              <p class="ends-in">ENDS IN</p>
+                              <svg height="20" viewBox="0 0 20 20" width="20" class="shopee-svg-icon _17VGnS clock"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-width="1.8" transform="translate(1 1)"><circle cx="9" cy="9" r="9"></circle><path d="m11.5639648 5.05283203v4.71571528l-2.72832027 1.57129639" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 20.39961 0)"></path></g></svg>
+                           </div>
+                           <div>
+                              <svg height="21" width="108" class="flash-sale-logo flash-sale-logo--white"><g fill="currentColor" fill-rule="evenodd"><path d="M0 16.195h3.402v-5.233h4.237V8H3.402V5.037h5.112V2.075H0zm29.784 0l-.855-2.962h-4.335l-.836 2.962H20.26l4.723-14.12h3.576l4.724 14.12zM26.791 5.294h-.04s-.31 1.54-.563 2.43l-.797 2.744h2.74l-.777-2.745c-.252-.889-.563-2.43-.563-2.43zm7.017 9.124s1.807 2.014 5.073 2.014c3.13 0 4.898-2.034 4.898-4.384 0-4.463-6.259-4.147-6.259-5.925 0-.79.778-1.106 1.477-1.106 1.672 0 3.071 1.245 3.071 1.245l1.439-2.824s-1.477-1.6-4.47-1.6c-2.76 0-4.918 1.718-4.918 4.325 0 4.345 6.258 4.285 6.258 5.964 0 .85-.758 1.126-1.457 1.126-1.75 0-3.324-1.462-3.324-1.462zm12.303 1.777h3.402v-5.53h5.054v5.53h3.401V2.075h-3.401v5.648h-5.054V2.075h-3.402zm18.64-1.678s1.692 1.915 4.763 1.915c2.877 0 4.548-1.876 4.548-4.107 0-4.483-6.492-3.871-6.492-6.36 0-.987.914-1.678 2.08-1.678 1.73 0 3.052 1.224 3.052 1.224l1.088-2.073s-1.4-1.501-4.12-1.501c-2.644 0-4.627 1.738-4.627 4.068 0 4.305 6.512 3.87 6.512 6.379 0 1.145-.952 1.698-2.002 1.698-1.944 0-3.44-1.48-3.44-1.48zm19.846 1.678l-1.166-3.594h-4.84l-1.166 3.594H74.84L79.7 2.174h2.623l4.86 14.021zM81.04 4.603h-.039s-.31 1.382-.583 2.172l-1.224 3.752h3.615l-1.224-3.752c-.253-.79-.545-2.172-.545-2.172zm7.911 11.592h8.475v-2.192H91.46V2.173H88.95zm10.477 0H108v-2.192h-6.064v-3.772h4.645V8.04h-4.645V4.366h5.753V2.174h-8.26zM14.255.808l6.142.163-3.391 5.698 3.87 1.086-8.028 12.437.642-8.42-3.613-1.025z"></path></g></svg>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="product-section price-section">
+                        <h3 class="single-price"><span class="after currency-value"><span class="value"> {{ product.discount }} </span><span class="currency">$</span></span> 
+                        <span class="before currency-value"><span class="value"> {{ product.price }} </span><span class="currency">$</span></span></h3>                                                                        
+                        
+                     </div>
+                     
+                     <div class="product-section add-to-cart-section">
+                        <div class="quantity"><span class="quantity-handler quantity-handler-left"><i class="fa fa-minus"></i></span> <input type="number" value="1" class="single-quantity"> <span class="quantity-handler quantity-handler-right"><i class="fa fa-plus"></i></span></div>
+                        <button type="button" data-size="{{product.size}}" data-color="{{product.color}}"  data-product="{{product.id}}" class="button single-submit">
+                   Order now
+                        </button>
+                     </div>
+                     <div class="product-section single-hurry-section">
+                        <!--p class="single-hurry">Hurry! Only 9 items left in stock!</p-->
+                     </div>
+                     <div class="product-section single-visitors">
+                        <!--p>Watching it <b>73</b>Browser right now.</p-->
+                     </div>
+        
+                     
+                     
+                     
+                     
+                     
+                     
+                     <div class="product-section description-section">
+                        <div class="single-description fr-view">
+                            {{ product.description|raw }}
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+       
+         </div>
+      </div>
+   </main>
+         <!-- App footer -->
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}  
+            

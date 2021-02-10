@@ -1,0 +1,43 @@
+{% include 'admin/elements/box.twig' %}
+      
+      
+ <center id="ctamodal" class="colored_heading">
+
+
+  <button type="button" data-listid="{{id}}" data-role="{{type}}" data-type="NoResponse" class="adminActionBtn btn btn-default btn-lg">Does not answer </button>
+  <button type="button" data-listid="{{id}}" data-role="{{type}}" data-type="Recall" class="adminActionBtn btn btn-primary btn-lg">Reconnection< /button>
+  <button type="button" data-listid="{{id}}" data-role="{{type}}" data-type="Canceled" class="adminActionBtn btn  btn-danger btn-lg">Canceled </button>
+
+
+
+	{% if (list.cityID is empty ) or (list.name is empty ) or (list.adress is empty)  or (list.products is empty) %}
+			{% set edit = 'data-edit=true' %}
+	{% else %}
+			{% set edit = 'data-edit=false' %}
+	{% endif %}
+
+
+  	{%  if auth.role != 'suivi' %}
+    <button type="button" {{ edit }} data-listid="{{id}}" data-role="{{type}}" data-type="confirmed"  class="adminActionBtn btn btn-danger  btn-lg">Accept the request  </button>
+    {% endif %}
+        
+
+	{%  if auth.role == 'suivi' %}
+		<button type="button"  data-listid="{{id}}" data-role="{{type}}" data-type="restoreSuivi" class="adminActionBtn btn  btn-danger   btn-lg"> Retrieval to distributor </button>
+	{% endif %}
+
+    
+	{%  if auth.role != 'deliver' %}
+	 <a href="/lists/edit/{{id}}" class="btn btn-success  btn-lg">  Edit </a>
+	{% endif %}
+    
+    
+    {% if admin %}
+    <a href="/instant/delete/{{id}}" class="btn btn-success  btn-lg deletebtn">  Delete  </a>
+    {% endif %}
+
+
+
+
+
+</center>

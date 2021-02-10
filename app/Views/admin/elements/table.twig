@@ -1,0 +1,69 @@
+<form action="{{path_for('admin.update')}}" method='POST'>
+  
+  <input id="id" name="id" type="hidden" value='{{list.id}}'>
+
+
+  <div class="form-group row">
+    <label for="name" class="col-4 col-form-label"> Name</label> 
+    <div class="col-8">
+      <input id="name" name="name" type="text" class="form-control" value='{{list.name}}' required="required">
+    </div>
+  </div>
+
+
+  <div class="form-group row">
+    <label for="phone" class="col-4 col-form-label">Phone number</label> 
+    <div class="col-8">
+      <input id="tel" name="tel" placeholder="Phone number" type="text" class="form-control" required="required"  value='{{list.tel}}' >
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="name" class="col-4 col-form-label">Address</label> 
+    <div class="col-8">
+      <input id="adress" name="adress" type="text" class="form-control" value='{{list.adress}}' required="required">
+    </div>
+  </div>
+
+
+
+  <div class="form-group row">
+    <label for="product" class="col-4 col-form-label">Product</label> 
+    <div class="col-8">
+      <select id="productSELECT" name="product" data-result='{{list.productID}}' name="productID" class="form-control">
+        {% for product in ALLPRODUCTS %}
+        <option value="{{product.id}}">{{product.name}}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="quantity" class="col-4 col-form-label">Quantity</label> 
+    <div class="col-8">
+      <input id="quantity" name="quantity" placeholder="Quantity" type="text" class="form-control" required="required"  value='{{list.quantity}}'>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="price" class="col-4 col-form-label">Price</label> 
+    <div class="col-8">
+      <input id="price" name="price" placeholder="Price" type="text" class="form-control" value='{{list.price}}'>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="color" class="col-4 col-form-label">Color</label> 
+    <div class="col-8">
+      <input id="color" name="color" placeholder="Color" type="text" class="form-control" value='{{list.color}}'>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="text1" class="col-4 col-form-label">Size</label> 
+    <div class="col-8">
+      <input id="text1" name="size" placeholder="Size" type="text" class="form-control" value='{{list.size}}'>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-block btn-primary">Saving information</button>
+    </div>
+  </div>
+</form>

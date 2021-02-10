@@ -1,0 +1,96 @@
+
+{% extends "front/layout.twig" %}
+
+
+
+
+
+{% block pixel %}
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3189475941165699');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3189475941165699&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+{% endblock %}
+
+
+
+
+
+
+{% block content %}
+
+	   <main class="page-wrapper">
+            <div
+               id="section-7gDoRfNzrGw8kEva"
+               
+               class="slider-container show-first-image horizontal large">
+                
+                
+                {% for item in sliders %}
+               <div class="slide ">
+                  <img class="" src="{{url.sliders}}{{item.image}}" alt="slider-image" />
+                  <span class="slider-caption">
+                  </span>
+               </div>
+               {% endfor %}
+               
+               
+            </div>
+            <section class="section products-list-section section-I7upaLbva51pYIX2">
+               <div class="container">
+                  <div class="app-heading">
+                     <h3 class="heading-primary">  </h3>
+                     <p class="heading-description"></p>
+                  </div>
+                  <div class="products-grid">
+
+
+                     {%  for product in products %}
+                     <div class="product-item">
+                        <a class="product-thumbnail" href="{{ path_for('website.product',{ id : product.id}) }}">
+                        <img src="{{ url.products }}{{product.thumbnail}}">
+                        </a>
+                        <div class="product-details">
+                           <div class="product-info">
+                              <h3 class="product-title">
+                                 <a href="{{ path_for('website.product',{ id : product.id}) }}">{{ product.name }}</a>
+                              </h3>
+                              <div class="product-price">
+                                 <span class="currency-value before">
+                                 <span class="value">{{ product.price }}</span><span class="currency">&nbsp;د.م.‏</span>
+                                 </span>
+                                 <span class="currency-value after">
+                                 <span class="value">{{ product.discount }}</span><span class="currency">&nbsp;د.م.‏</span>
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="product-actions">
+                              <a class="button small-button secondary-button" href="{{ path_for('website.product',{ id : product.id}) }}">
+                              Order now
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     {% endfor %}
+                  </div>
+               </div>
+            </section>
+           
+         </main>
+         <!-- App footer -->
+{% endblock %}  
+            

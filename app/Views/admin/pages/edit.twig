@@ -1,0 +1,60 @@
+{% extends "admin/layout.twig" %}
+
+{% block title %} Page edit {% endblock %}
+
+
+{% block content %}
+    
+ 
+
+				<!-- Content area -->
+				<div class="content">
+			
+
+				<!-- Page header -->
+				<div class="page-header page-header-transparent">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h1>Page edit</h1>
+						</div>
+
+						
+					</div>
+				</div>
+				<!-- /page header -->
+			
+
+			        {% include "admin/elements/flash.twig" %}
+
+<div class="col-md-12">								
+
+<form  enctype="multipart/form-data"  method='post' action="{{ path_for('pages.edit', {id :post.id }) }}">
+<input type="hidden"  name="thumbnailChanged" id="thumbnailChanged" value="false" />
+ 
+
+
+<div class="col-md-9">
+    <div class="form-group">
+        <input type="text" class="form-control" name="title"  value="{{post.title}}" />
+    </div>
+    <div class="form-group">	
+        <textarea name="post_content" id="posteditor" class="cke_rtl" >{{post.content}}</textarea>
+    </div>	
+        <button type="submit" class="btn btn-block btn-primary">Page edit <i class="icon-arrow-right13 position-right"></i></button>
+
+</div>
+
+            
+
+            
+
+        </div>
+ </form>
+ </div>
+</div>
+<!-- /content area -->
+
+
+
+
+{% endblock %}

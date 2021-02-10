@@ -1,0 +1,585 @@
+[21-Oct-2020 10:42:31 Africa/Casablanca] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kelahuuq_new.products' doesn't exist in /home/kelahuuq/public_html/vendor/illuminate/database/Connection.php:326
+Stack trace:
+#0 /home/kelahuuq/public_html/vendor/illuminate/database/Connection.php(326): PDO->prepare('select * from `...')
+#1 /home/kelahuuq/public_html/vendor/illuminate/database/Connection.php(657): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#2 /home/kelahuuq/public_html/vendor/illuminate/database/Connection.php(624): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#3 /home/kelahuuq/public_html/vendor/illuminate/database/Connection.php(333): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#4 /home/kelahuuq/public_html/vendor/illuminate/database/Query/Builder.php(2082): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#5 /home/kelahuuq/public_html/vendor/illumina in /home/kelahuuq/public_html/vendor/illuminate/database/Connection.php on line 664
+[21-Oct-2020 10:46:11 Africa/Casablanca] PHP Deprecated:  urlFor() is deprecated. Use pathFor() instead. in /home/kelahuuq/public_html/vendor/slim/slim/Slim/Router.php on line 452
+[22-Oct-2020 12:10:27 Africa/Casablanca] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\DataController::index(), 1 passed in /home/kelahuuq/public_html/vendor/slim/slim/Slim/RouteGroup.php on line 45 and exactly 2 expected in /home/kelahuuq/public_html/app/Controllers/DataController.php:22
+Stack trace:
+#0 /home/kelahuuq/public_html/vendor/slim/slim/Slim/RouteGroup.php(45): App\Controllers\DataController->index(Object(Slim\App))
+#1 /home/kelahuuq/public_html/vendor/slim/slim/Slim/App.php(286): Slim\RouteGroup->__invoke(Object(Slim\App))
+#2 /home/kelahuuq/public_html/app/Routes/admin.php(175): Slim\App->group('/data', 'Data:index')
+#3 /home/kelahuuq/public_html/vendor/slim/slim/Slim/RouteGroup.php(45): Closure->{closure}(Object(Slim\App))
+#4 /home/kelahuuq/public_html/vendor/slim/slim/Slim/App.php(286): Slim\RouteGroup->__invoke(Object(Slim\App))
+#5 /home/kelahuuq/public_html/app/Routes/admin.php(215): Slim\App->group('/admin', Object(Closure))
+#6 /home/kelahuuq/public_html/app/bootstrap.php(45): require('/home/kelahuuq/... in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 22
+[22-Oct-2020 12:10:28 Africa/Casablanca] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\DataController::index(), 1 passed in /home/kelahuuq/public_html/vendor/slim/slim/Slim/RouteGroup.php on line 45 and exactly 2 expected in /home/kelahuuq/public_html/app/Controllers/DataController.php:22
+Stack trace:
+#0 /home/kelahuuq/public_html/vendor/slim/slim/Slim/RouteGroup.php(45): App\Controllers\DataController->index(Object(Slim\App))
+#1 /home/kelahuuq/public_html/vendor/slim/slim/Slim/App.php(286): Slim\RouteGroup->__invoke(Object(Slim\App))
+#2 /home/kelahuuq/public_html/app/Routes/admin.php(175): Slim\App->group('/data', 'Data:index')
+#3 /home/kelahuuq/public_html/vendor/slim/slim/Slim/RouteGroup.php(45): Closure->{closure}(Object(Slim\App))
+#4 /home/kelahuuq/public_html/vendor/slim/slim/Slim/App.php(286): Slim\RouteGroup->__invoke(Object(Slim\App))
+#5 /home/kelahuuq/public_html/app/Routes/admin.php(215): Slim\App->group('/admin', Object(Closure))
+#6 /home/kelahuuq/public_html/app/bootstrap.php(45): require('/home/kelahuuq/... in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 22
+[23-Oct-2020 17:11:10 Africa/Casablanca] PHP Fatal error:  Uncaught Error: Class 'App\Models\options' not found in /home/kelahuuq/public_html/app/Starter.php:114
+Stack trace:
+#0 /home/kelahuuq/public_html/app/Starter.php(103): App\Starter->options()
+#1 /home/kelahuuq/public_html/app/Starter.php(67): App\Starter->addAssetsToContainer(Object(Slim\Container))
+#2 /home/kelahuuq/public_html/app/bootstrap.php(39): App\Starter->__construct(Object(Slim\Container))
+#3 /home/kelahuuq/public_html/public/index.php(6): require('/home/kelahuuq/...')
+#4 {main}
+  thrown in /home/kelahuuq/public_html/app/Starter.php on line 114
+[23-Oct-2020 17:11:10 Africa/Casablanca] PHP Fatal error:  Uncaught Error: Class 'App\Models\options' not found in /home/kelahuuq/public_html/app/Starter.php:114
+Stack trace:
+#0 /home/kelahuuq/public_html/app/Starter.php(103): App\Starter->options()
+#1 /home/kelahuuq/public_html/app/Starter.php(67): App\Starter->addAssetsToContainer(Object(Slim\Container))
+#2 /home/kelahuuq/public_html/app/bootstrap.php(39): App\Starter->__construct(Object(Slim\Container))
+#3 /home/kelahuuq/public_html/public/index.php(6): require('/home/kelahuuq/...')
+#4 {main}
+  thrown in /home/kelahuuq/public_html/app/Starter.php on line 114
+[23-Oct-2020 17:11:12 Africa/Casablanca] PHP Fatal error:  Uncaught Error: Class 'App\Models\options' not found in /home/kelahuuq/public_html/app/Starter.php:114
+Stack trace:
+#0 /home/kelahuuq/public_html/app/Starter.php(103): App\Starter->options()
+#1 /home/kelahuuq/public_html/app/Starter.php(67): App\Starter->addAssetsToContainer(Object(Slim\Container))
+#2 /home/kelahuuq/public_html/app/bootstrap.php(39): App\Starter->__construct(Object(Slim\Container))
+#3 /home/kelahuuq/public_html/public/index.php(6): require('/home/kelahuuq/...')
+#4 {main}
+  thrown in /home/kelahuuq/public_html/app/Starter.php on line 114
+[23-Oct-2020 17:22:48 Africa/Casablanca] PHP Deprecated:  urlFor() is deprecated. Use pathFor() instead. in /home/kelahuuq/public_html/vendor/slim/slim/Slim/Router.php on line 452
+[23-Oct-2020 20:22:19 Africa/Casablanca] PHP Notice:  Undefined variable: options in /home/kelahuuq/public_html/app/Starter.php on line 106
+[23-Oct-2020 20:22:19 Africa/Casablanca] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/kelahuuq/public_html/app/Starter.php:106
+Stack trace:
+#0 /home/kelahuuq/public_html/app/Starter.php(99): App\Starter->options()
+#1 /home/kelahuuq/public_html/app/Starter.php(63): App\Starter->addAssetsToContainer(Object(Slim\Container))
+#2 /home/kelahuuq/public_html/app/bootstrap.php(39): App\Starter->__construct(Object(Slim\Container))
+#3 /home/kelahuuq/public_html/public/index.php(6): require('/home/kelahuuq/...')
+#4 {main}
+  thrown in /home/kelahuuq/public_html/app/Starter.php on line 106
+[23-Oct-2020 20:22:20 Africa/Casablanca] PHP Notice:  Undefined variable: options in /home/kelahuuq/public_html/app/Starter.php on line 106
+[23-Oct-2020 20:22:20 Africa/Casablanca] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/kelahuuq/public_html/app/Starter.php:106
+Stack trace:
+#0 /home/kelahuuq/public_html/app/Starter.php(99): App\Starter->options()
+#1 /home/kelahuuq/public_html/app/Starter.php(63): App\Starter->addAssetsToContainer(Object(Slim\Container))
+#2 /home/kelahuuq/public_html/app/bootstrap.php(39): App\Starter->__construct(Object(Slim\Container))
+#3 /home/kelahuuq/public_html/public/index.php(6): require('/home/kelahuuq/...')
+#4 {main}
+  thrown in /home/kelahuuq/public_html/app/Starter.php on line 106
+[23-Oct-2020 20:22:30 Africa/Casablanca] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\Controller::__construct(), 0 passed in /home/kelahuuq/public_html/app/Starter.php on line 106 and exactly 1 expected in /home/kelahuuq/public_html/app/Controllers/Controller.php:55
+Stack trace:
+#0 /home/kelahuuq/public_html/app/Starter.php(106): App\Controllers\Controller->__construct()
+#1 /home/kelahuuq/public_html/app/Starter.php(99): App\Starter->options()
+#2 /home/kelahuuq/public_html/app/Starter.php(63): App\Starter->addAssetsToContainer(Object(Slim\Container))
+#3 /home/kelahuuq/public_html/app/bootstrap.php(39): App\Starter->__construct(Object(Slim\Container))
+#4 /home/kelahuuq/public_html/public/index.php(6): require('/home/kelahuuq/...')
+#5 {main}
+  thrown in /home/kelahuuq/public_html/app/Controllers/Controller.php on line 55
+[23-Oct-2020 20:22:31 Africa/Casablanca] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controllers\Controller::__construct(), 0 passed in /home/kelahuuq/public_html/app/Starter.php on line 106 and exactly 1 expected in /home/kelahuuq/public_html/app/Controllers/Controller.php:55
+Stack trace:
+#0 /home/kelahuuq/public_html/app/Starter.php(106): App\Controllers\Controller->__construct()
+#1 /home/kelahuuq/public_html/app/Starter.php(99): App\Starter->options()
+#2 /home/kelahuuq/public_html/app/Starter.php(63): App\Starter->addAssetsToContainer(Object(Slim\Container))
+#3 /home/kelahuuq/public_html/app/bootstrap.php(39): App\Starter->__construct(Object(Slim\Container))
+#4 /home/kelahuuq/public_html/public/index.php(6): require('/home/kelahuuq/...')
+#5 {main}
+  thrown in /home/kelahuuq/public_html/app/Controllers/Controller.php on line 55
+[23-Oct-2020 23:04:25 Africa/Casablanca] PHP Notice:  Undefined variable: twig in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 34
+[23-Oct-2020 23:14:59 Africa/Casablanca] PHP Notice:  Undefined index: unanswred in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 35
+[23-Oct-2020 23:46:28 Africa/Casablanca] PHP Notice:  Undefined index: id in /home/kelahuuq/public_html/app/Routes/admin.php on line 70
+[24-Oct-2020 00:19:03 Africa/Casablanca] PHP Notice:  Object of class App\Models\User could not be converted to int in /home/kelahuuq/public_html/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 77
+[24-Oct-2020 00:19:25 Africa/Casablanca] PHP Notice:  Object of class App\Models\User could not be converted to int in /home/kelahuuq/public_html/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 77
+[24-Oct-2020 00:19:29 Africa/Casablanca] PHP Notice:  Object of class App\Models\User could not be converted to int in /home/kelahuuq/public_html/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 77
+[24-Oct-2020 00:19:29 Africa/Casablanca] PHP Notice:  Object of class App\Models\User could not be converted to int in /home/kelahuuq/public_html/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 77
+[24-Oct-2020 00:21:16 Africa/Casablanca] PHP Notice:  Object of class App\Models\User could not be converted to int in /home/kelahuuq/public_html/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 77
+[26-Oct-2020 16:02:14 Africa/Casablanca] PHP Notice:  Undefined variable: id in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 65
+[26-Oct-2020 16:02:39 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[26-Oct-2020 16:02:39 Africa/Casablanca] PHP Notice:  Undefined index: productID in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 72
+[26-Oct-2020 16:02:51 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[26-Oct-2020 16:02:51 Africa/Casablanca] PHP Notice:  Undefined index: productID in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 72
+[26-Oct-2020 16:03:32 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[26-Oct-2020 16:03:39 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[26-Oct-2020 16:03:50 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[26-Oct-2020 16:04:07 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[26-Oct-2020 16:38:19 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[26-Oct-2020 17:04:57 Africa/Casablanca] PHP Notice:  Undefined index: ids in /home/kelahuuq/public_html/app/Controllers/ExcelExporterController.php on line 21
+[26-Oct-2020 17:05:10 Africa/Casablanca] PHP Notice:  Undefined index: ids in /home/kelahuuq/public_html/app/Controllers/ExcelExporterController.php on line 21
+[26-Oct-2020 17:17:01 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[26-Oct-2020 23:28:45 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[26-Oct-2020 23:28:47 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/kelahuuq/public_html/app/Controllers/DataController.php on line 70
+[06-Nov-2020 15:05:00 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 141
+[06-Nov-2020 15:05:00 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 142
+[06-Nov-2020 15:05:00 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 146
+[06-Nov-2020 15:05:00 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 147
+[06-Nov-2020 15:05:00 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 149
+[06-Nov-2020 15:05:05 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 141
+[06-Nov-2020 15:05:05 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 142
+[06-Nov-2020 15:05:05 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 146
+[06-Nov-2020 15:05:05 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 147
+[06-Nov-2020 15:05:05 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 149
+[06-Nov-2020 15:05:08 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 141
+[06-Nov-2020 15:05:08 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 142
+[06-Nov-2020 15:05:08 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 146
+[06-Nov-2020 15:05:08 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 147
+[06-Nov-2020 15:05:08 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 149
+[06-Nov-2020 15:05:17 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 141
+[06-Nov-2020 15:05:17 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 142
+[06-Nov-2020 15:05:17 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 146
+[06-Nov-2020 15:05:17 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 147
+[06-Nov-2020 15:05:17 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 149
+[06-Nov-2020 15:53:12 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 15:53:12 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 15:55:05 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 15:55:05 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 15:56:33 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 15:56:33 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:00:23 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:00:23 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:01:15 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:01:15 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:01:47 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:01:47 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:02:01 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:02:01 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:02:27 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:02:27 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:02:47 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:02:47 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:09 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:09 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:20 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:20 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:32 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:32 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:46 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:46 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:59 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:03:59 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:12 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:12 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:28 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:28 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:37 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:37 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:49 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:49 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:52 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:04:52 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:00 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:00 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:09 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:09 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:24 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:24 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:37 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:37 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:43 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:43 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:56 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:05:56 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:06:16 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:06:16 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:09:48 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:09:48 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:10:08 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:10:08 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:12:48 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:12:48 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:14:01 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:14:01 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:17:16 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:17:16 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:18:03 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:18:03 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:23:38 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:23:38 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:24:17 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:24:17 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:43:23 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:43:23 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:45:07 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:45:07 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:45:12 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:45:12 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:45:41 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:45:41 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:46:11 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:46:11 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:48:11 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:48:11 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:48:41 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:48:41 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:49:00 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:49:00 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:50:26 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:50:26 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:52:26 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:52:26 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:53:18 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 16:53:18 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 17:32:23 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 17:32:23 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 17:33:40 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 141
+[06-Nov-2020 17:33:40 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 142
+[06-Nov-2020 17:33:40 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 146
+[06-Nov-2020 17:33:40 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 147
+[06-Nov-2020 17:33:40 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 149
+[06-Nov-2020 17:33:47 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 141
+[06-Nov-2020 17:33:47 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 142
+[06-Nov-2020 17:33:47 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 146
+[06-Nov-2020 17:33:47 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 147
+[06-Nov-2020 17:33:47 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 149
+[06-Nov-2020 17:55:50 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 17:55:50 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:02:59 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:02:59 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:04:24 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:04:24 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:04:36 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:04:36 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:04:41 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:04:41 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:04:54 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:04:54 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:05:33 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:05:33 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:07:15 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:07:15 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:11:46 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:11:46 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:12:15 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:12:15 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:12:22 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:12:22 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:13:56 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:13:56 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:15:57 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:15:57 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:20:20 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:20:20 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:20:41 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:20:41 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:20:44 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:20:44 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:48:08 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:48:08 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:50:47 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[06-Nov-2020 18:50:47 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:04:24 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:04:24 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:04:50 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:04:50 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:06:26 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:06:26 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:07:06 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:07:06 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:09:51 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:09:51 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:23:18 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 10:23:18 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 11:27:44 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 11:27:44 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 11:42:53 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[07-Nov-2020 11:43:05 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[07-Nov-2020 11:51:30 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 11:51:30 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 11:53:00 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 11:53:00 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 11:54:40 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[07-Nov-2020 11:54:57 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[07-Nov-2020 11:55:02 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[07-Nov-2020 11:55:11 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[07-Nov-2020 12:29:14 Africa/Casablanca] PHP Notice:  Undefined variable: form in /home/medizodx/store.mediaman.website/app/Controllers/PagesSystemController.php on line 79
+[07-Nov-2020 12:29:14 Africa/Casablanca] PHP Notice:  Undefined variable: form in /home/medizodx/store.mediaman.website/app/Controllers/PagesSystemController.php on line 80
+[07-Nov-2020 12:29:48 Africa/Casablanca] PHP Notice:  Undefined variable: form in /home/medizodx/store.mediaman.website/app/Controllers/PagesSystemController.php on line 79
+[07-Nov-2020 12:29:48 Africa/Casablanca] PHP Notice:  Undefined variable: form in /home/medizodx/store.mediaman.website/app/Controllers/PagesSystemController.php on line 80
+[07-Nov-2020 12:52:04 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 12:52:04 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:11:46 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:11:46 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:38:07 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:38:07 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:46:02 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:46:02 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:46:16 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:46:16 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:47:12 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:47:12 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:48:37 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:48:37 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:48:57 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:48:57 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:49:13 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:49:13 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:51:35 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:51:35 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:51:42 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:51:42 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:51:48 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:51:48 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:52:36 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:52:36 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:53:14 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:53:14 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:53:19 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:53:19 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:53:21 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:53:21 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:56:04 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 13:56:04 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 14:04:30 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 14:04:30 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 14:04:43 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 161
+[07-Nov-2020 14:04:43 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 162
+[07-Nov-2020 14:04:43 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 166
+[07-Nov-2020 14:04:43 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 167
+[07-Nov-2020 14:04:43 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 169
+[07-Nov-2020 14:04:44 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 161
+[07-Nov-2020 14:04:44 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 162
+[07-Nov-2020 14:04:44 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 166
+[07-Nov-2020 14:04:44 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 167
+[07-Nov-2020 14:04:44 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 169
+[07-Nov-2020 14:04:55 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 161
+[07-Nov-2020 14:04:55 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 162
+[07-Nov-2020 14:04:55 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 166
+[07-Nov-2020 14:04:55 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 167
+[07-Nov-2020 14:04:55 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 169
+[07-Nov-2020 14:14:52 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 14:14:52 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 14:15:00 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 161
+[07-Nov-2020 14:15:00 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 162
+[07-Nov-2020 14:15:00 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 166
+[07-Nov-2020 14:15:00 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 167
+[07-Nov-2020 14:15:00 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 169
+[07-Nov-2020 14:15:07 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 161
+[07-Nov-2020 14:15:07 Africa/Casablanca] PHP Notice:  Undefined index: city in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 162
+[07-Nov-2020 14:15:07 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 166
+[07-Nov-2020 14:15:07 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 167
+[07-Nov-2020 14:15:07 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 169
+[07-Nov-2020 14:22:43 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[07-Nov-2020 14:22:52 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[07-Nov-2020 14:22:57 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[07-Nov-2020 14:23:01 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 14:23:01 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 14:23:15 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 161
+[07-Nov-2020 14:23:15 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 166
+[07-Nov-2020 14:23:15 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 167
+[07-Nov-2020 14:23:15 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/store.mediaman.website/app/Routes/admin.php on line 169
+[07-Nov-2020 14:24:48 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[07-Nov-2020 14:24:48 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[08-Nov-2020 05:02:26 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[08-Nov-2020 05:02:26 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[08-Nov-2020 05:03:50 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[08-Nov-2020 05:03:50 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[08-Nov-2020 05:03:51 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[08-Nov-2020 05:03:51 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[08-Nov-2020 05:03:56 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[08-Nov-2020 05:03:56 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 03:52:25 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 03:52:25 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 03:53:25 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 03:53:25 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 04:34:25 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 04:34:25 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 04:36:53 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 04:36:53 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 12:12:44 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[10-Nov-2020 12:12:53 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 12:12:53 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 12:13:09 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 12:13:09 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 12:13:09 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[10-Nov-2020 12:13:09 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[11-Nov-2020 02:43:47 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[12-Nov-2020 09:36:02 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 09:36:02 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:05:55 Africa/Casablanca] PHP Notice:  Trying to get property 'password' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/AuthController.php on line 24
+[12-Nov-2020 11:06:11 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[12-Nov-2020 11:06:18 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[12-Nov-2020 11:06:35 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[12-Nov-2020 11:06:45 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:06:45 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:06:49 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[12-Nov-2020 11:06:53 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[12-Nov-2020 11:07:13 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[12-Nov-2020 11:07:20 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:07:20 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:07:35 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[12-Nov-2020 11:07:47 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:07:47 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:08:09 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[12-Nov-2020 11:08:35 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[12-Nov-2020 11:08:39 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[12-Nov-2020 11:09:38 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:09:38 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:10:00 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:10:00 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:10:09 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[12-Nov-2020 11:11:06 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[12-Nov-2020 11:11:22 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[12-Nov-2020 11:11:27 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[12-Nov-2020 11:11:33 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[12-Nov-2020 11:12:09 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:12:09 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:12:20 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[12-Nov-2020 11:12:28 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[12-Nov-2020 11:12:31 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 385
+[12-Nov-2020 11:13:04 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[12-Nov-2020 11:13:11 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[12-Nov-2020 11:13:16 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:13:16 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:13:31 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[12-Nov-2020 11:13:35 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:13:35 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:13:50 Africa/Casablanca] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/medizodx/store.mediaman.website/vendor/twig/twig/lib/Twig/Environment.php(378) : eval()'d code on line 254
+[12-Nov-2020 11:14:00 Africa/Casablanca] PHP Notice:  Undefined index: category in /home/medizodx/store.mediaman.website/app/Controllers/ProductsController.php on line 185
+[12-Nov-2020 11:14:05 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:14:05 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:14:10 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:14:10 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:14:27 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:14:27 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:16:41 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:16:41 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:19:38 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:19:38 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:20:01 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:20:01 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:20:35 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:20:35 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:21:28 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:21:28 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:21:32 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:21:32 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:22:24 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:22:24 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:22:40 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:22:40 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:25:39 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:25:39 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:26:22 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:26:22 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:27:24 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:27:24 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:28:28 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:28:28 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:29:34 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:29:34 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:30:28 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:30:28 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:31:14 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:31:14 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:31:34 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:31:34 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:31:46 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:31:46 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:43:07 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:43:07 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:44:23 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:44:23 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:45:20 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:45:20 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:45:25 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:45:25 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:46:40 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:46:40 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:49:49 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:49:49 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:51:25 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:51:25 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:51:56 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:51:56 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:52:43 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:52:43 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:54:00 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:54:00 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:55:04 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:55:04 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:57:03 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:57:03 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:57:31 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:57:31 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:59:02 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:59:02 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:59:11 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 11:59:11 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 12:04:03 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 12:04:03 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:29:27 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:29:27 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:29:29 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:29:29 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:29:45 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:29:45 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:30:51 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:30:51 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:30:51 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:30:51 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:31:14 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:31:14 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:31:53 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 15:31:53 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 17:17:19 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[12-Nov-2020 17:17:19 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 00:24:33 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 00:24:33 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 00:25:02 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 00:25:02 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 02:16:01 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 02:16:01 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 14:47:50 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 14:47:50 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 14:49:00 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 14:49:00 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 14:49:11 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 14:49:11 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 14:49:19 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[13-Nov-2020 14:49:19 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[18-Nov-2020 02:37:26 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[18-Nov-2020 02:37:26 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[19-Nov-2020 07:01:59 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[19-Nov-2020 07:01:59 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[20-Nov-2020 16:46:29 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[20-Nov-2020 16:46:29 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[20-Nov-2020 16:46:39 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[20-Nov-2020 16:46:39 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[21-Nov-2020 16:02:56 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[21-Nov-2020 16:02:56 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/store.mediaman.website/app/Controllers/WebController.php on line 69
+[28-Nov-2020 16:45:10 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[28-Nov-2020 16:45:10 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[28-Nov-2020 16:45:28 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[28-Nov-2020 16:45:28 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[28-Nov-2020 16:45:40 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[28-Nov-2020 16:45:40 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[30-Nov-2020 12:45:18 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[30-Nov-2020 12:45:18 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[01-Dec-2020 13:34:20 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[01-Dec-2020 13:34:20 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[01-Dec-2020 13:34:57 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[01-Dec-2020 13:34:57 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[02-Dec-2020 09:13:52 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[02-Dec-2020 09:13:52 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[02-Dec-2020 09:14:02 Africa/Casablanca] PHP Notice:  Undefined index: address in /home/medizodx/storev2.mediaman.website/app/Routes/admin.php on line 161
+[02-Dec-2020 09:14:02 Africa/Casablanca] PHP Notice:  Undefined index: color in /home/medizodx/storev2.mediaman.website/app/Routes/admin.php on line 166
+[02-Dec-2020 09:14:02 Africa/Casablanca] PHP Notice:  Undefined index: size in /home/medizodx/storev2.mediaman.website/app/Routes/admin.php on line 167
+[02-Dec-2020 09:14:02 Africa/Casablanca] PHP Notice:  Undefined index: codepostal in /home/medizodx/storev2.mediaman.website/app/Routes/admin.php on line 169
+[08-Dec-2020 08:39:50 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[08-Dec-2020 08:39:50 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:58:13 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:58:13 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:58:39 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:58:39 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:58:49 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:58:49 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:59:10 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:59:10 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:59:26 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 09:59:26 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 15:19:02 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[14-Dec-2020 15:19:02 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[15-Dec-2020 11:14:08 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[15-Dec-2020 11:14:08 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[15-Dec-2020 11:14:10 Africa/Casablanca] PHP Notice:  Trying to get property 'category' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69
+[15-Dec-2020 11:14:10 Africa/Casablanca] PHP Notice:  Trying to get property 'name' of non-object in /home/medizodx/storev2.mediaman.website/app/Controllers/WebController.php on line 69

@@ -1,0 +1,24 @@
+
+
+{% if admin %}  
+<div class="sidebar sidebar-main">
+    <div class="sidebar-content">
+        <div class="sidebar-category sidebar-category-visible mt-15">
+            <div class="category-content no-padding">
+                <ul class="navigation navigation-main navigation-accordion">
+
+
+                    <li><a href="{{path_for('data')}}"><i class="icon-price-tag3"></i> <span> New orders</span></a></li>
+                    <li><a href="{{path_for('slider')}}">  <i class='icon-gallery'></i><span>Sliders</span></a></li>
+                    <li><a href="{{path_for('products')}}"><i class="icon-grid6"></i> Products</a></li>
+                    <li><a href="{{path_for('products.categories')}}"> <i class="icon-bag"></i>Categories</a>
+                    <li><a href="{{path_for('settings.index')}}"> <i class="icon-cog"></i> Settings </a>
+                    <li><a href="{{path_for('pages')}}"> <i class="icon-files-empty2"></i> Pages </a>
+                    
+                                   
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+  {% endif %}

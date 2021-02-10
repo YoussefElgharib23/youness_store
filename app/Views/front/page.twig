@@ -1,0 +1,370 @@
+{% extends "front/layout.twig" %}
+
+
+
+{% block bodyClass %}
+class='product-single'
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="breadcrumb" style="margin-bottom: 74px;"><div class="container">
+
+<ul class="list-unstyled breadcrumb-list"><a href="/"><i class="fa fa-home" aria-hidden="true"></i>
+</a> 
+
+            <li><span style="padding-right:10px;">{{ page.title }}</span></li>
+
+
+
+            </ul></div></div>
+
+
+<style>
+.cmd_wrapper {
+    background: #0000009c;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 25px;
+}
+.cmd_wrapper form {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+
+
+.cmd_wrapper input {
+    margin-bottom: 10px;
+}
+   .single-product .product-wrapper .product-details {width: calc(100% - 650px);margin-right: 45px;}
+
+
+   @media (max-width: 600px) and (min-width: 0px) {
+   .notice-bar.mobile-notice-bar span {
+   color: white !important;
+       text-align: center !important;
+       display: block;
+       line-height: 30px;
+   }
+
+   .product-details {
+       overflow: hidden;
+       max-width: 100% !important;
+       width: 100% !important;
+   }
+
+body {
+    overflow-x: hidden;
+}
+
+ul.list-preview {
+    margin-bottom: 85px;
+    overflow: hidden;
+}
+
+.single-product .preview img {
+    max-width: 100% !important;
+}
+.single-product .preview {
+    width: 100% !important;
+}
+
+.single-product .product-wrapper .product-preview {
+    width: 100%;
+}
+
+
+.cmd_wrapper {
+    padding: 7px;
+}
+
+
+   }
+input.btn.btn-block.btn-submit {
+    background: rgb(222, 80, 129);
+    width: 100%;
+    height: 45px;
+    border-radius: 2px;
+    color: white;
+    font-size: 14px;
+}
+
+
+.cmd_wrapper h1 {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cmd_wrapper form {
+    max-width: 630px;
+    display: inline-block;
+
+}
+
+.cmd_wrapper {
+    text-align: center !important;
+}
+
+li.thumbnail-item:hover {
+    cursor:pointer;
+}
+
+span.after.currency-value {
+    color: #de5081;
+}
+
+a#close_cmd {
+    position: absolute;
+    font-size: 22px;
+    margin-right: 5px;
+    color: #de5081;
+}
+
+
+.product-item .product-price .before {
+    display: inline-block !important;
+    margin-left: 15px !important;
+}
+.product-item .product-price .after {
+    display: inline-block !important;
+}
+.product-item .product-price {
+    display: block !important;
+    text-align: center !important;
+}
+
+select#type {
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 0;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+    padding-right: 30px;
+    -moz-appearance: initial !important;
+    -webkit-appearance: none;
+    appearance: initial !important;
+}
+
+.quantity_area {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label.quantity_label {
+    margin-left: 25px;
+    height: 25px !important;
+    vertical-align: middle;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+select#type {
+    margin-top: 0;
+}
+
+
+
+select#type {
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    padding-right: 70px;
+}
+
+div#phoneAlert {
+    background: #b51a4f;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    line-height: 44px;
+}
+
+.stats{
+   padding: 10px 0;
+}
+.stars{
+   margin-top: 4px;
+   margin-left: 5px;
+}
+.stats, .stars{
+   display: flex;
+   justify-content: flex-end;
+   line-height: 1.2;
+}
+.stat{
+   display: flex;
+   padding-left: 5px;
+   padding-right: 10px;
+}
+.border-right{
+   border-right: 1px #CCC solid;
+}
+
+.stars-quantity{
+   color: #d0011b;
+}
+.stars-quantity,
+.rating-quantity{
+   border-bottom: 1px red solid;
+   margin-right: 5px;
+}
+.sold-quantity{
+   margin-right: 5px;
+}
+.stars-quantity,
+.rating-quantity,
+.sold-quantity{
+   font-size: 16px;
+}
+.icon-rating-solid{
+   height: 14px;
+   width: 14px;
+}
+
+.flash{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   padding: 0 10px;
+   width: 100%;
+   height: 36px;
+   background-image: url(/assets/flashBackground.jpg),
+                     linear-gradient(-90deg,#f0451e 9%,#f32424 96%);
+}
+.clock{
+   margin-top: 8px !important;
+}
+.flash-sale-logo,
+.shopee-svg-icon{
+   color: #FFF;
+   margin-top: 8px;
+}
+.shopee-svg-icon{
+   margin-top: 3px;
+}
+.ends-in{
+   color: #FFF;
+   margin-left: 10px;
+}
+.time-container{
+   display: flex;
+   line-height: 35px;
+}
+.time-counter{
+   display: flex;
+   height: 70%;
+   margin-top: 6px;
+   margin-left: 5px;
+   line-height: 23px;
+}
+.digits-container{
+   background-color: #000;
+   margin-left: 5px;
+   padding: 0 2px;
+   border-radius: 5px;
+}
+.digit-container{
+   color: #FFF;
+   font-size: 18px;
+}
+.shopee-rating-stars__primary-star{
+   color: red !important;
+}
+.fa-star{
+   color: #d0011b;
+   margin-left: 2px;
+}
+
+.digits-container {
+    min-width: 30px !important;
+    text-align: center;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Toast messages -->
+         <div id="app">
+   <div class="header-wrapper" style="padding-bottom: 20px;display: none;">
+      <div class="notice-bar desktop-notice-bar" style="color: rgb(255, 255, 255); background-color: rgb(222, 80, 129);">
+         <div class="container">
+            <div class="fr-view">
+               <ul>
+                  <li>
+                     <h4>Fast shipping to all cities of Morocco+ &nbsp;Discounts up to50% </h4>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="notice-bar mobile-notice-bar" style="color: rgb(255, 255, 255); background-color: rgb(222, 80, 129);">
+         <div class="container">
+            <div class="fr-view">
+               <p><span>&nbsp;Discounts up to 39% On the occasion of the opening of our new branch in Morocco  </span></p>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <div class="toast">
+      <div class="alert alert-">
+         <div class="container">
+            <div class="alert-icon"></div>
+            <div class="alert-body">
+               <div class="alert-message">
+                  <ul class="list-unstyled"></ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+<main class="page-wrapper">
+    
+         <section class="section pages-section">
+        <div class="container">
+        
+        <div class="app-heading"><h1 class="heading-primary">{{ page.title }}</h1></div> 
+        
+        <div class="page-body">
+            {{ page.content|raw }}
+        </div>
+        </div>
+        </section>
+        </main>
+        
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}  
+            

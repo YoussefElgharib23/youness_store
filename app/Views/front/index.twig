@@ -1,0 +1,620 @@
+{% extends "front/layout.twig" %}
+
+
+
+
+{% block content %}      
+
+
+
+
+
+
+
+
+<style>
+
+.cmd_wrapper {
+    background: #0000009c;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 25px;
+}
+.cmd_wrapper form {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+
+
+.cmd_wrapper input {
+    margin-bottom: 17px;
+}
+   .single-product .product-wrapper .product-details {width: calc(100% - 650px);margin-right: 45px;}
+
+
+   @media (max-width: 600px) and (min-width: 0px) {
+   .notice-bar.mobile-notice-bar span {
+   color: white !important;
+       text-align: center !important;
+       display: block;
+       line-height: 30px;
+   }
+
+   .product-details {
+       overflow: hidden;
+       max-width: 100% !important;
+       width: 100% !important;
+   }
+
+body {
+    overflow-x: hidden;
+}
+
+ul.list-preview {
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+.single-product .preview img {
+    max-width: 100% !important;
+}
+.single-product .preview {
+    width: 100% !important;
+}
+
+.single-product .product-wrapper .product-preview {
+    width: 100%;
+}
+
+
+.cmd_wrapper {
+    padding: 7px;
+}
+
+
+   }
+input.btn.btn-block.btn-submit {
+    background: rgb(222, 80, 129);
+    width: 100%;
+    height: 45px;
+    border-radius: 2px;
+    color: white;
+    font-size: 14px;
+}
+
+
+.cmd_wrapper h1 {
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cmd_wrapper form {
+    max-width: 630px;
+    display: inline-block;
+
+}
+
+.cmd_wrapper {
+    text-align: center !important;
+}
+
+li.thumbnail-item:hover {
+    cursor:pointer;
+}
+
+span.after.currency-value {
+    color: #de5081;
+}
+
+a#close_cmd {
+    position: absolute;
+    font-size: 22px;
+    margin-right: 5px;
+    color: #de5081;
+}
+
+
+.product-item .product-price .before {
+    display: inline-block !important;
+    margin-left: 15px !important;
+}
+.product-item .product-price .after {
+    display: inline-block !important;
+}
+.product-item .product-price {
+    display: block !important;
+    text-align: center !important;
+}
+
+select#type {
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 0;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+    padding-right: 30px;
+    -moz-appearance: initial !important;
+    -webkit-appearance: none;
+    appearance: initial !important;
+}
+
+.quantity_area {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label.quantity_label {
+    margin-left: 25px;
+    height: 25px !important;
+    vertical-align: middle;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+select#type {
+    margin-top: 0;
+}
+
+
+
+select#type {
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    padding-right: 70px;
+}
+
+div#phoneAlert {
+    background: #b51a4f;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    line-height: 44px;
+}
+
+
+.owl-nav.disabled {
+    display: inline-block !important;
+    position: absolute;
+    left: 0;
+    top: -34px;
+}
+.categories-style-1 .owl-nav button.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 37%;
+}
+.categories-style-1 .owl-nav.disabled {
+    position: initial;
+    top: 90px!important;
+}
+.categories-style-1 .owl-nav {
+    display: inline-block !important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    background: {{options.color}} !important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    padding: 5px 15px !important;
+    display: inline-block;
+    color: white;
+    float: left;
+}
+.categories-style-1 .owl-nav button.owl-next {
+    position: absolute;
+    right: 0;
+    top: 37%;
+}
+
+/****************************************************************************************/
+
+.tarow{display:flex;flex-wrap:wrap;margin-left:-10px;margin-right:-10px;}
+@media (min-width: 1025px){
+.tarow{margin-right:-15px;margin-left:-15px;}
+}
+.col-12,.col-sm-6,.col-sm-12,.col-lg-6,.col-lg-12{position:relative;width:100%;min-height:1px;padding-left:10px;padding-right:10px;}
+@media (min-width: 1025px){
+.col-12,.col-sm-6,.col-sm-12,.col-lg-6,.col-lg-12{padding-right:15px;padding-left:15px;}
+}
+.col-12{flex:0 0 100%;max-width:100%;}
+@media (min-width: 541px){
+.col-sm-6{flex:0 0 50%;max-width:50%;}
+.col-sm-12{flex:0 0 100%;max-width:100%;}
+}
+@media (min-width: 1025px){
+.col-lg-6{flex:0 0 50%;max-width:50%;}
+.col-lg-12{flex:0 0 100%;max-width:100%;}
+}
+.d-none{display:none!important;}
+.d-block{display:block!important;}
+.d-flex{display:flex!important;}
+@media (min-width: 541px){
+.d-sm-none{display:none!important;}
+.d-sm-block{display:block!important;}
+}
+@media (min-width: 778px){
+.d-md-none{display:none!important;}
+.d-md-block{display:block!important;}
+}
+@media (min-width: 1025px){
+.d-lg-none{display:none!important;}
+.d-lg-block{display:block!important;}
+}
+@media (min-width: 1260px){
+.d-xl-none{display:none!important;}
+.d-xl-block{display:block!important;}
+}
+.flex-column{flex-direction:column!important;}
+.flex-center{justify-content:center!important;align-items:center!important;}
+.justify-content-start{justify-content:flex-start!important;}
+.justify-content-center{justify-content:center!important;}
+.align-items-start{align-items:flex-start!important;}
+.align-items-center{align-items:center!important;}
+.align-self-center{align-self:center!important;}
+.w-100{width:100%!important;}
+.h-100{height:100%!important;}
+.mt-0{margin-top:0!important;}
+.mb-0{margin-bottom:0!important;}
+.mb-5{margin-bottom:5px!important;}
+.mt-15{margin-top:15px!important;}
+.mt-25{margin-top:25px!important;}
+.mb-30{margin-bottom:30px!important;}
+.px-10{padding-right:10px!important;}
+.px-10{padding-left:10px!important;}
+.py-35{padding-top:35px!important;}
+.py-35{padding-bottom:35px!important;}
+.mx-auto{margin-right:auto!important;}
+.mx-auto{margin-left:auto!important;}
+.text-center{text-align:center!important;}
+.font-weight-normal{font-weight:400!important;}
+.font-weight-bold{font-weight:700!important;}
+/*! CSS Used from: Embedded */
+.promobox:not(.promobox--is-slider) .promobox__content{transition-duration:0.5s!important;}
+
+.pointer-events-none{pointer-events:none;}
+.position-absolute{position:absolute!important;}
+.position-relative{position:relative!important;}
+.absolute-stretch{position:absolute;top:0;bottom:0;left:0;right:0;}
+.overflow-hidden{overflow:hidden!important;}
+.rimage{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.rimage__img{position:absolute;max-width:initial;top:0;left:0;width:100%;height:100%;transition-property:opacity;}
+.rimage__img--fade-in.lazyload:not(.loaded){opacity:0;}
+.rimage__img--cover{object-fit:cover;}
+@media (min-width:1025px){
+.image-animation{overflow:hidden;}
+}
+@media (min-width:1025px){
+.theme-css-animate .image-animation>*{transition-property:transform;will-change:transform;backface-visibility:hidden;}
+}
+.promobox a{pointer-events:all;}
+.promobox__content{top:0;bottom:0;left:0;right:0;}
+.promobox__content .custom-build>div>div{pointer-events:all;}
+@media (max-width:1024px){
+.promobox__content_inner{max-width:100%!important;top:initial!important;bottom:initial!important;left:initial!important;right:initial!important;margin:initial!important;}
+}
+.css-theme-loaded .promobox:not(.promobox--is-slider) .promobox__content{transform:none;opacity:1;}
+.promobox__curtain{opacity:0;transition-property:opacity;will-change:opacity;}
+.promobox--curtain .promobox__content{transition-property:opacity,transform;will-change:opacity,transform;}
+.promobox--curtain:hover .promobox__curtain{opacity:1;}
+.promobox--curtain:hover .promobox__content{opacity:0!important;}
+
+/**********************************************************************/
+
+.owl-carousel .owl-nav [class*='owl-'] {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.owl-carousel .owl-nav [class*='owl-'].disabled:hover {
+  background-color: #D6D6D6;
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev {
+  width: 50px;
+  height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+  position: absolute;
+  top: 30%;
+	font-size: 20px;
+  color: #fff;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+.owl-carousel .owl-prev {
+  left: -70px;
+}
+.owl-carousel .owl-next {
+  right: -70px;
+}
+
+.owl-carousel2 .slide {
+    max-height: 600px !important;
+    overflow: hidden;
+}
+span.slider-caption {
+    z-index: 99999999999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50% , -50%);
+    background: #00000054;
+    max-width: 900px;
+    text-align: center;
+    font-size: 50px;
+    color:white
+}
+
+.slide {
+    position: relative;
+}
+
+.slide a{
+position: absolute; 
+    z-index: 99999999999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50% , 70%);
+    background: {{options.color}};
+    width: 310px;
+    height : 70px;
+    line-height : 70px;
+    text-align: center;
+    font-size: 35px;
+    color:white;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 600px) and (min-width: 0px) {
+
+
+span.slider-caption {
+    font-size: 20px;
+    width: 100%;
+}
+
+.slide a {
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.owl-carousel2 .slide {
+    height: 240px;
+}
+
+.owl-carousel2 .owl-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+}
+
+
+
+
+
+
+
+</style>
+
+
+	   <main class="page-wrapper">
+            <section  class="owl-carousel owl-carousel2">
+
+                {% for item in sliders %}
+               <div class="slide ">
+                  <img class="" src="{{url.sliders}}{{item.image}}" alt="slider-image" />
+                  <span class="slider-caption">
+                  {{item.text}}
+                  </span>
+
+                  <a href="{{item.link}}" class="lkhrmaza">
+                  Read More
+                  </a>
+
+
+                      </div>
+
+               {% endfor %}
+               
+                    </section>    
+
+            <section style="display:none" class="section categories-list-section section-maQXPLLyprgylSlA">
+               <div class="container">
+                  <div class="app-heading">
+                     <h3 class="heading-primary"></h3>
+                     <p class="heading-description"></p>
+                  </div>
+                  <div class="categories-style-1 owl-carousel">
+                  {%  for ProductCategory in ProductCategories %}
+                     <div class="category-item">
+                        <a href="/categories/{{ ProductCategory.slug }}" class="category-thumbnail"><img src="/uploads/categories/{{ProductCategory.image}}"></a> 
+                        <h3 class="category-details"><a href="{{ ProductCategory.slug }}" class="category-title">
+                           {{ ProductCategory.name }}
+                           </a>
+                        </h3>
+                     </div>
+                  {% endfor %}
+                  </div>
+               </div>
+            </section>
+
+            
+            <div id="shopify-section-1567110256200" class="shopify-section">
+               <div>
+                  <div data-section-id="1567110256200" data-section-type="home-builder" class="container">
+                     <div class=" mt-25 mb-0 overflow-hidden">
+                        <div class="tarow justify-content-start align-items-start">
+                        {%  for ProductCategory in ProductCategories %}
+                     
+
+
+
+                      
+                           <div class="col-12 col-sm-6 col-lg-6 mt-0 mb-30 ">
+                              <div class="promobox promobox--curtain position-relative d-flex flex-column align-items-center text-center overflow-hidden">
+                                 <div class="w-100">
+                                    <a href="/categories/{{ ProductCategory.slug }}" class="d-block w-100">
+                                       <div class="image-animation ">
+                                          <div class="rimage" style="padding-top:90.87837837837837%;"><img class="rimage__img rimage__img--fade-in lazyload loaded" srcset="/uploads/categories/{{ProductCategory.image}}" data-was-processed="true"></div>
+                                       </div>
+                                    </a>
+                                    <div class="promobox__content absolute-stretch d-flex flex-column flex-center overflow-hidden pointer-events-none">
+                                       <div class="promobox__content_inner position-absolute d-flex align-items-center w-100 h-100">
+                                          <div class="custom-build w-100 d-flex justify-content-center">
+                                             <div class="position-relative h-100 w-100 mx-auto py-35 px-10" style="max-width: 370px;">
+                                                <!-- Background -->
+                                                <div class="custom-build__bg absolute-stretch" style="/* start:bg */background-color: #ffffff;/* end:bg */ opacity: 0.8;"></div>
+                                                <div class="h-100 d-flex flex-column justify-content-center position-relative text-center">
+                                                   <!-- Text #1 --><a href="/categories/{{ ProductCategory.slug }}" class="custom-build__text-1 h2 link-unstyled w-100 align-self-center mt-0 mb-0 font-weight-bold">{{ ProductCategory.name }}</a><!-- END:Text #1 --><!-- Text #2 --><!-- END:Text #2 -->
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="promobox__curtain absolute-stretch d-flex align-items-center">
+                                       <div class="custom-build w-100 d-flex justify-content-center">
+                                          <div class="position-relative h-100 w-100 mx-auto py-35 px-10" style="max-width: 370px;">
+                                             <!-- Background -->
+                                             <div class="custom-build__bg absolute-stretch" style="background-color: #01bd9a; opacity: 0.8;"></div>
+                                             <div class="h-100 d-flex flex-column justify-content-center position-relative text-center">
+                                                <!-- Text #1 --><a href="/categories/{{ ProductCategory.slug }}" class="custom-build__text-1 h2 link-unstyled w-100 align-self-center mt-0 mb-0 font-weight-bold"><span style="color: #ffffff;">{{ ProductCategory.name }}</span></a><!-- END:Text #1 --><!-- Text #2 --><!-- END:Text #2 -->
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           
+                        {% endfor %}
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            {% if pinnedproducts is not empty %}
+            <section class="page-section page-section-single-product section-bKOKUE6l2BrRJQXl">
+               <div class="single-product">
+                  <div class="container">
+                     <div class="product-wrapper">
+                        <div class="product-preview">
+                           <div class="product-section preview-wrapper">
+                              <!----> 
+                              <div class="thumbnail">
+                                 <div class="preview" style="position: relative; overflow: hidden;"><img src="{{ url.products }}{{pinnedproducts.thumbnail}}" ></div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="product-details">
+                           <div class="product-section">
+                              <h1 class="single-title">{{ pinnedproducts.name }}</h1>
+                           </div>
+                           <div class="product-section price-section">
+                              <h3 class="single-price"><span class="after currency-value"><span class="value">{{ pinnedproducts.discount }}</span><span class="currency">$</span></span> <span class="before currency-value"><span class="value">{{ pinnedproducts.price }}</span><span class="currency">$</span></span></h3>
+                           </div>
+                           <!---->
+                           <div class="product-section add-to-cart-section">
+                              <div class="quantity"><span class="quantity-handler quantity-handler-left"><i class="fa fa-minus"></i></span> <input type="number" value="1" class="single-quantity"> <span class="quantity-handler quantity-handler-right"><i class="fa fa-plus"></i></span></div>
+                              <button type="button" data-size="{{pinnedproducts.size}}" data-color="{{pinnedproducts.color}}"  data-product="{{pinnedproducts.id}}" class="button single-submit">
+                              Order now
+                              </button>
+                           </div>
+                           <div class="product-section description-section">
+                              <div class="single-description fr-view">
+                                 <h3 style="box-sizing: border-box; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; margin-top: 0px; margin-bottom: 24px; font-size: 17px; line-height: 31px; font-weight: 400; color: rgb(20, 20, 20); font-family: &quot;Basic Commercial&quot;, sans-serif; background-color: rgb(255, 255, 255); text-align: left;">
+                                 
+                                 {{ pinnedproducts.description|raw }}
+                                 </h3>
+                              </div>
+                              <!---->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!----> <!---->
+               </div>
+            </section>
+            {% endif %}
+
+
+
+            <section class="section products-list-section testimonials section-I7upaLbva51pYIX2">
+               <div class="container">
+
+                  <div class="col-sm-12">
+                     <div id="customers-testimonials" class="owl-carousel">
+                     {%  for product in products %}
+
+
+                     <div class="item">
+                       <div class="shadow-effect">
+                        <div class="product-item">
+                        <a class="product-thumbnail" href="{{ path_for('website.product',{ id : product.id}) }}">
+                        <img src="{{ url.products }}{{product.thumbnail}}">
+                        </a>
+                        <div class="product-details">
+                           <div class="product-info">
+                              <h3 class="product-title">
+                                 <a href="{{ path_for('website.product',{ id : product.id}) }}">{{ product.name }}</a>
+                              </h3>
+                              <div class="product-price">
+                                 <span class="currency-value before">
+                                 <span class="value">{{ product.price }}</span><span class="currency">$</span>
+                                 </span>
+                                 <span class="currency-value after">
+                                 <span class="value">{{ product.discount }}</span><span class="currency">$</span>
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="product-actions">
+                              <a class="button small-button secondary-button" href="{{ path_for('website.product',{ id : product.id}) }}">
+                           Order now
+                              </a>
+                           </div>
+                        </div>
+                       </div>
+                     </div>
+                     </div>
+                     {% endfor %}
+                     </div>
+                  </div>
+
+               </div>
+            </section>
+
+            <section id="section-R4tF5IrjRDPe5uat" class="slider-container horizontal medium">
+               <div class="slide slide-overlay"> <img src="/uploads/media/{{options.banner_footer}}"  class="desktop-image"> <span class="slider-caption">
+               </div>
+            </section>
+           
+         </main>
+         <!-- App footer -->
+{% endblock %}  
+            

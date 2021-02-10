@@ -1,0 +1,316 @@
+{% extends "admin/layout.twig" %}
+
+{% block content %}
+
+<div class="content" style="margin-top: 30px;margin-bottom: -50px;">   
+
+
+<div class="panel from_to hidden">
+<div class="panel-body">
+<form class="heading-form mg-b-25" id="form-stats-From-To" autocomplete="off" method="GET" action="/">
+<div class="section-wrapper mg-t-20">
+       
+          <div class="row">
+            <div class="col-lg-5">
+                <input value="" type="text" name="from" readonly="true" placeholder="Date from" class="form-control" id="datepickerFrom">
+            </div><!-- col -->
+            <div class="col-lg-5 mg-t-40 mg-lg-t-0">
+                <input type="text" name="to" value="" readonly="true" placeholder="Date to" class="form-control" id="datepickerTo">
+            </div><!-- col -->
+            <div class="col-lg-2 mg-t-40 mg-lg-t-0">
+                <input type="submit" class="btn  btn-block btn-primary" value="Search">
+            </div><!-- col -->
+          </div><!-- row -->
+        </div>
+</form>
+</div>        
+</div>        
+
+
+
+
+
+
+
+
+
+
+<!-- Content area -->
+<div class="xsx">
+
+
+<div class="row">
+    
+ 
+      <div class="col-sm-6 col-md-3">
+         <div class="panel panel-body bg-blue-400 has-bg-image ">
+            <div class="media no-margin">
+               <div class="media-body">
+                  <h3 class="no-margin">   <span></span>      {{new}} </h3>
+                  <span class="text-uppercase text-size-mini">New orders</span>
+               </div>
+               <div class="media-right media-middle"><i class="icon-cash3 icon-3x opacity-75"></i></div>
+            </div>
+         </div>
+      </div>
+   
+      <div class="col-sm-6 col-md-3">
+         <div class="panel panel-body bg-danger-400 has-bg-image">
+            <div class="media no-margin">
+               <div class="media-body">
+                  <h3 class="no-margin">  {{recall}}   </h3>
+                  <span class="text-uppercase text-size-mini">Confirmed</span>
+               </div>
+               <div class="media-right media-middle"><i class="icon-file-empty2 icon-3x opacity-75"></i></div>
+            </div>
+         </div>
+      </div>
+  
+      <div class="col-sm-6 col-md-3">
+         <div class="panel panel-body bg-success-400 has-bg-image">
+            <div class="media no-margin">
+               <div class="media-body text-left">
+                  <h3 class="no-margin">   {{unanswred}}   </h3>
+                  <span class="text-uppercase text-size-mini">Distributed</span>
+               </div>
+               <div class="media-right media-middle"><i class="icon-users2 icon-3x opacity-75"></i></div>
+            </div>
+         </div>
+      </div>
+   
+      <div class="col-sm-6 col-md-3">
+         <div class="panel panel-body bg-indigo-400 has-bg-image">
+            <div class="media no-margin">
+               <div class="media-body text-left">
+                  <h3 class="no-margin">   {{canceled}}   </h3>
+                  <span class="text-uppercase text-size-mini">Canceled </span>
+               </div>
+               <div class="media-right media-middle"><i class="icon-phone-wave icon-3x opacity-75"></i></div>
+            </div>
+         </div>
+      </div>
+ 
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+<!-- Page header -->
+<div class="page-header page-header-default ">
+<div class="page-header-content">
+
+<div class="page-title">
+<h1> <span class="text-semibold"><i class="icon-arrow-right6 position-left goback"></i>New orders</span></h1>
+</div>
+
+
+
+<div class="heading-elements colored_heading">
+
+
+
+
+                
+</div>
+
+
+
+</div>
+
+
+
+
+<style>
+ul.breadcrumb-elements li.active a {
+    background: #352b60;
+    color: white;
+}
+</style>
+
+
+
+
+<div class="breadcrumb-line">
+<ul class="breadcrumb">
+
+    
+</ul>
+
+   <ul class="breadcrumb-elements">
+       
+<li><a id="addneworder" class="addneworder" href="javascript:;"> Add a new order</a></li>
+<li><a id="exportliaData" href="javascript:;"> Extract data </a></li>
+
+
+
+<li {% if type == 'waiting' %} class='active' {% endif %}><a href="?type=waiting">Waiting for connection</a></li>
+<li {% if type == 'unanswred' %} class='active' {% endif %}><a href="?type=unanswred">Does not answer</a></li>
+<li {% if type == 'canceled' %} class='active' {% endif %}><a href="?type=canceled">Canceled </a></li>
+<li {% if type == 'recall' %} class='active' {% endif %}><a href="?type=recall">Reconnection  </a></li>
+<li {% if type == 'livred' %} class='active' {% endif %}><a href="?type=livred"> Distributed  </a></li>
+<li {% if type == 'accepted' %} class='active' {% endif %}><a href="?type=accepted"> Confirmed </a></li>
+
+    </ul>
+
+
+ </div>
+
+</div>
+<!-- /page header -->
+
+   
+   
+<style>
+ul.breadcrumb-elements li {
+    /*padding: 25px 30px;*/
+}
+.bawaba-tables tr td:last-child a.delte_tkf {
+    padding: 10px 30px;
+    border: 0 !important;
+    border-radius: 0;
+    background-image: none;
+    border-radius: 5px;
+}
+a.delte_tkf {
+    color: white;
+    background-color: #4f93b2;
+    background-image: linear-gradient(0deg,#4f93b2 20%,#66cfb5) !important;
+    border: 0;
+    color: white !important;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 500px;
+}
+
+a.edit_airf {
+    color: white;
+    background-color: #4f93b2;
+    background-image: linear-gradient(0deg,#4f93b2 20%,#66cfb5) !important;
+    border: 0;
+    color: white !important;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+</style>
+   
+   
+
+   
+
+
+  
+<!-- Content area -->
+<div class="content">
+
+
+
+{% include "admin/elements/flash.twig" %}
+
+
+
+ <input type="hidden" id="ids" name="list">
+  
+
+  
+
+<div class="mg-t-25">
+   <div class="table-responsive">
+    <table class="table table-bordered bawaba-tables">
+        <thead>
+            <tr>
+                <th><b> <input type="checkbox" id="checkAll"> </b></th>
+                <th><b>Date</b></th>
+                <th><b>Name and phone number  </b></th>
+                <th><b>Address </b></th>
+                <th><b>Product </b></th>
+                <th><b>Quantity </b></th>
+                <th><b>Price </b></th>
+                <th><b>Color</b></th>
+                <th><b>Size</b></th>
+                <th><b>Status </b></th>
+                <th><b>Change status    </b></th>
+                <th><b> Payment method </b></th>
+                <th><b>   Conversion code </b></th>
+                <th><b> delete  </b></th>
+                <th><b> edit   </b></th>
+
+            </tr>
+        </thead>
+        <tbody>  
+        {% for item in lists %}
+        <tr class='listingOrdersTR' id='row_cmd_{{item.id}}'>
+                <th><b> <input class="check" type="checkbox" data-item="{{item.id}}"> </b></th>
+            
+             <td>{{item.created_at}}</td>
+             <td>{{item.name}}<br>{{item.tel}}</td>
+             <td>
+
+
+             {{item.adress}}<br>{{item.city}}<br>{{item.province}}<br>{{item.codepostal}}
+
+
+
+             </td>
+             <td>{{item.realproduct.name}}</td> 
+             <td>{{item.quantity}} </td>    
+             <td>{{item.price}} </td>
+             <td>{{ item.color }} </td>
+             <td>{{ item.size }} </td>
+             <td>
+
+              {%  if item.statue is empty %}
+                Waiting for connection
+              {% else %}
+              {{ item.statue }} 
+              {% endif %}
+
+
+              </td>
+             <td>
+                <select data-id="{{item.id}}" class="change_statue">
+                    <option value="">Change status   </option>
+                  <option value="Does not answer" > Does not answer </option>
+                  <option value="Distributed">Distributed </option>
+                  <option value="Reconnection"> Reconnection   < /option>
+                  <option value=" Canceled">  Canceled  </option>
+                  <option value="Confirmed "> Confirmed  </option>
+                </select>
+                 
+             </td>   
+                    
+
+
+             <td>{{ item.payment_mode }} </td>
+            <td>{{ item.bank_transfer }} </td>
+
+
+            <td>
+               <a class='delte_tkf' data-id="{{item.id}}" href="javascript:;">delete </a>
+            </td>
+
+
+                          
+            <td>
+               <a class='edit_airf' data-id="{{item.id}}" href="javascript:;">Edit </a>
+            </td>
+             
+         </tr>
+         {% endfor %}   
+        </tbody>
+    </table>
+    </div>
+</div>
+<div class="" style="margin-top: 25px;">
+    <center>{{pagination|raw}}</center>
+</div>
+
+
+
+</div>
+{% endblock %}

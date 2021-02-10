@@ -1,0 +1,200 @@
+{% extends "admin/layout.twig" %}
+{% block title %} {{l.productsCreate.260}} {% endblock %}
+{% block content %}
+
+
+
+
+
+
+<style>
+li.thumbnail-item {
+    width: 59px !important;
+    height: 59px !important;
+    float: right;
+    margin-left: 11px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    list-style: none;
+}
+}
+
+li.thumbnail-item img {
+    width: 100%;
+}</style>
+
+
+
+
+<!-- Main content -->
+<div class="content-wrapper">
+
+    <!-- Content area -->
+    <div class="content">
+
+        {% include "admin/elements/flash.twig" %}
+        <form class="form-horizontal" method='POST' action="{{path_for('products.edit' , { id : product.id})}}" enctype="multipart/form-data" >
+        <div class="col-md-9">
+            <div class="panel panel-flat ">
+                <div class="panel-body">
+                        <fieldset class="content-group">
+                            <legend class="text-bold"> {{l.productsCreate.260}} </legend>
+                            <div class="form-group">
+                                <label class="control-label col-lg-2">{{l.productsCreate.261}}</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="name"  value="{{product.name}}">
+                                </div>
+                            </div>
+                                                        
+                            <div class="form-group">
+                                <label class="control-label col-lg-2">{{l.productsCreate.263}}</label>
+                                <div class="col-lg-10">
+                                   <textarea rows="5" name="description" id='posteditor' class="form-control" >{{product.description}}</textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-2">{{l.productsCreate.264}}</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="price" value="{{product.price}}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-lg-2"> {{l.productsCreate.265}}</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="discount" value="{{ product.discount }}">
+                                </div>
+                            </div>
+                            
+                            
+                                     
+                            
+                               
+                            <div class="form-group">
+                                <label class="control-label col-lg-2">Price of the second product, optional  </label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="price_2" value="{{ product.price_2 }}">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            <div class="form-group">
+                                <label class="control-label col-lg-2"> activing the size </label>
+                                <div class="col-lg-10">
+                                    <input type="checkbox" class="form-control" name="size" {% if product.size == 'on' %}  checked="checked" {% endif %}>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label class="control-label col-lg-2"> activing the color</label>
+                                <div class="col-lg-10">
+                                    <input type="checkbox" class="form-control" name="color" {% if product.color == 'on' %}  checked="checked" {% endif %}>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-lg-2">Show in the main </label>
+                                <div class="col-lg-10">
+                                    <input type="checkbox" class="form-control" name="show_home" {% if product.show_home == 'on' %}checked="checked" {% endif %}>
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                        
+                    
+                </div>
+            </div>
+            
+
+   </div>
+   
+   
+<div class="col-md-3">
+   <button type="submit" class="btn btn-block btn-primary">Saving changes <i class="icon-arrow-left13 position-right"></i></button>
+   <br>
+    <div class="panel panel-white">
+        <div class="panel-heading">
+        {{l.productsCreate.267}}
+        </div>
+        <div class="panel-body">
+          <div class="preview-thumbnail">
+                    <img src="{{url.products}}{{product.thumbnail}}" id="profile_avatar"  />
+            </div>
+           <label for="ProductThumbnail" class="btn btn-danger btn-rounded"><i class="icon-image2 position-left"></i> {{l.productsCreate.268}} </label>
+            <input name="ProductThumbnail" id="ProductThumbnail" accept="image/jpg, image/jpeg, image/png" style="visibility:hidden;" type="file" />
+        </div>
+    </div>
+    
+    
+     <div class="panel panel-white">
+        <div class="panel-heading">
+        {{l.productsCreate.269}}
+        </div>
+        <div class="panel-body">
+            
+
+<label for="galleryImages" class="btn btn-danger btn-rounded"><i class="icon-image2 position-left"></i>Choose photos </label>
+<input name="galleryImages[]" id="galleryImages" accept="image/jpg, image/jpeg, image/png" style="visibility:hidden;" type="file" multiple />
+
+         
+           {% for item in product.galleryimages %}
+                                <li class="thumbnail-item" >
+                                    <img src="{{url.products}}{{item}}" />
+                                </li>
+                                {% endfor %}
+         
+         
+         
+         
+         
+         
+         
+         
+        </div>
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        		</div>
+
+    
+
+    <div class="panel panel-white">
+		<div class="panel-heading">
+			<h6 class="panel-title"> {{l.productsCreate.271}} </h6>
+		</div>
+
+		<div class="panel-body">
+			 <select  name="category" style="width:100%;" class="form-control editcategory"  data-value={{product.categoryID}} >
+                <option value="NOTDEFFINED">{{l.productsCreate.272}}</option>
+                {% for categorie in categories %}
+                <option value="{{categorie.id}}">{{categorie.name}}</option>
+                {% endfor %} 
+        </select>
+		</div>
+	</div>
+
+</div>
+</form>
+   
+   
+    </div>
+</div>            
+ 
+      
+
+
+
+
+           
+{% endblock %}

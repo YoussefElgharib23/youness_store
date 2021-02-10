@@ -1,0 +1,113 @@
+{% extends "front/layout.twig" %}
+
+
+
+
+
+
+
+
+{% block content %}
+
+
+<div id="u_column_19" class="col-md-12 u_column">
+  <div style="padding: 0px;background-color:#ffffff;border-top: 0px solid #f6f6f6;border-left: 0px solid #CCC;border-right: 0px solid #CCC;border-bottom: 0px solid #CCC;">
+    
+
+
+  <div id="u_content_redirection_1" class="u_content_redirection" style="overflow-wrap: break-word;padding: 10px;">
+    
+                                <div style="text-align: center; font-style: italic;">
+                                    
+                                   
+                                </div>
+                            
+  </div>
+
+  <div id="u_content_text_13" class="u_content_text" style="overflow-wrap: break-word;padding: 10px; text-align: center;">
+    <div style="color:#000;line-height:140%;text-align:left;word-wrap:break-word" class="editable"><p style="font-size: 14px; line-height: 140%; text-align: center;">&nbsp;</p>
+<p style="text-align: center; line-height: 140%; font-size: 14px;">&nbsp;</p>
+<p dir="rtl" style="text-align: center; line-height: 140%; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><span style="font-size: 44px; line-height: 61.6px;"><strong><span style="line-height: 61.6px; font-size: 44px;">Thank you</span></strong></span></span></p>
+<p dir="rtl" style="text-align: center; line-height: 140%; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><strong><span style="line-height: 61.6px; font-size: 44px;">For your order! </span></strong></span></span></p>
+<p dir="rtl" style="text-align: center; line-height: 140%; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><strong><span style="color: #339966; font-size: 72px; font-family: sans-serif; line-height: 100.8px;">✔</span></strong></span></span></p>
+<p dir="rtl" style="text-align: center; line-height: 140%; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><span style="font-size: 20px; line-height: 28px;"> We will contact you in less than 24 hours to confirm the order </span></span></p>
+<p style="text-align: center; line-height: 140%; font-size: 14px;"><span style="font-size: 20px; line-height: 28px;">&nbsp;</span></p>
+<p dir="rtl" style="text-align: center; line-height: 140%; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><span style="font-size: 20px; line-height: 28px;"><strong>Important:</strong>&nbsp;The shipping company will contact you before arriving at your provided address, so please answer their call to avoid a late delivery </span></span></span></p>
+<p style="text-align: center; line-height: 140%; font-size: 14px;"><span style="font-size: 20px; line-height: 28px;">&nbsp;</span></p>
+
+
+<p dir="rtl" style="text-align: center; line-height: 140%; font-size: 14px;">&nbsp;</p>
+<p dir="rtl" style="text-align: center; line-height: 140%; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"><span style="line-height: 19.6px; font-size: 14px;"></span></span></p></div>
+  </div>
+
+
+
+
+
+
+{% if order.payment_mode == 'bank'  %}
+<style> 
+  form.center_thank_you_form {
+    max-width: 840px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+form.center_thank_you_form input[type='submit'] {
+    background: #de5081;
+    width: 100%;
+    height: 47px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+</style>
+<form action="{{ path_for('save.bank')}}"  method="POST" class="center_thank_you_form">
+<h2> Please enter the bank number after the transfer  </h2>
+<br>  
+    <input type="hidden" name="order_id"  value="{{order.id}}" />
+  <textarea name="bank_transfer" class="Bank transfer">  </textarea>
+  <input type="submit" class="btn btn-block" value="Send the code" />
+
+</form>
+
+{% endif %}
+
+
+
+
+
+
+
+
+
+<div class="" style="text-align: center;">
+	<a href="/" class="gobackHome"> Continue shopping </a>
+</div>
+
+  
+
+  <style>
+a.gobackHome {
+    background: #de5081;
+    display: inline-block;
+    padding: 15px 36px;
+    font-size: 16px;
+    margin: 0 auto;
+    float: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+    
+  </style>
+                                   
+  </div>
+
+  </div>
+</div>
+
+
+{% endblock %}  
+            

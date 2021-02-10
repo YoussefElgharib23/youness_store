@@ -1,0 +1,172 @@
+{% extends "admin/layout.twig" %}
+{% block title %} add new categorie{% endblock %}
+{% block content %}	
+
+
+
+
+<style>
+    .panel {
+    overflow: initial !important;
+}
+.product-image-list img {
+    width: 100%;
+}
+
+.imgactiverel {
+    position: relative;
+}
+
+.product-image-list img {
+    width: 100px;
+    height: 100px;
+}
+
+.imgactiverel::after {right: 0;content: 'Not activated';position: absolute;color: white;width: 100%;height: 100%;text-align: center;top: 45%;}
+
+.imgactiverel::before {
+    content: '';
+    position: absolute;
+    background: #8080808f;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<!-- Main content -->
+<div class="content-wrapper">
+
+
+				<!-- Page header -->
+				<div class="page-header page-header-transparent">
+					<div class="page-header-content">
+						<div class="page-title">
+							<h1> <span class="text-semibold">categories</span></h1>
+							<ul class="breadcrumb position-left">
+								    {% if searchView != true %}
+                                    <p>total categories  : {{ pagination.count }} categories</p>
+                                    {% endif %}
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+
+
+<!-- Content area -->
+<div class="content">
+			        {% include "admin/elements/flash.twig" %}
+			  
+			      <div class="col-md-6">
+			          <div class="panel panel-flat">
+ 
+        <div class="panel-body">
+            <form method="post" id="createProductCategory" action="{{path_for('products.categories')}}" enctype='multipart/form-data'>
+               <div id="result"></div>
+                <fieldset class="content-group">
+                    <legend class="text-bold">add new categorie</legend>
+                    <div class="form-group">
+                        <label class="control-label">categorie name </label>
+                        <input type="text" value="{%  if flash('error') %}{{old.name}}{%  endif %}" class="form-control frequired" name="name" >
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">categorie link</label>
+                        <input type="text" value="{%  if flash('error') %}{{old.slug}}{%  endif %}" class="form-control frequired" name="slug" >
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Status</label>
+                        <select class="form-control frequired" name="active" id="active" value="{%  if flash('error') %}{{old.active}}{%  endif %}">
+                            <option value="1">Active</option>
+                            <option value="00">Not active</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" name="image" id="image" style="display: none;">
+                        <label class="btn btn-danger btn-rounded" for="image"> <i class="icon-image2 position-left"></i> image</label>
+                    </div>
+                    {% if edit_page == '1' %}
+                    <input type="hidden" name='edit' value="{{old.id}}">
+                    {% endif %}
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-primary">
+                    add categorie
+                    <i class="icon-arrow-left13 position-right"></i>
+                    </button>
+                    </div>
+                </fieldset>								
+            </form>
+        </div>
+    </div>        
+			      </div>
+			      
+			      
+			      <div class="col-md-6">
+			          <div class="panel panel-flat">
+    <table class="table datatable datatable-basic">
+        <thead>
+            <tr>
+                <th><b>image</b></th>
+                <th><b>name</b></th>
+                <th><b>slug</b></th>
+                <th><b>total products</b></th>
+                <th class="text-center"><b>edit</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for categorie in categories %}
+            <tr id=''>
+            <td data-label="image"><div {% if categorie.active == '00' %} class="product-image-list imgactiverel" {% endif %} class="product-image-list"><img src="/uploads/categories/{{categorie.image}}"></img></div></td>
+            <td>{{categorie.name}}</td>
+            <td>{{categorie.slug}}</td>
+            <td>{{categorie.products.count()}}</td>
+
+            <td class="text-center">
+                <ul class="icons-list">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                     
+                     
+                      <li><a href="{{ path_for('products.categories.edit', {'id': categorie.id}) }}" class="text-primary-600"><i class="icon-pencil7 position-left"></i>edit </a></li>
+                        <li><a class='text-danger' href="{{ path_for('products.categories.delete', {'id': categorie.id}) }}"><i class="icon-trash"></i><b>  delete </b></a>
+                        
+                        </li>
+                    </ul>
+                </li>
+                </ul>
+            </td>
+            </tr>
+            {% endfor  %}
+        </tbody>
+    </table>
+</div>
+
+
+
+			      </div>                    
+			
+			        
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

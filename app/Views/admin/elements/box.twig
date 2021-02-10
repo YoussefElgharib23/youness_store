@@ -1,0 +1,35 @@
+<div class='more_detail_loaded' >
+
+    
+            <h2>Customer name:  {{ list.name }}</h2>
+            <h2> Telephone number :  {{list.tel}} </h2>        
+            <h2>Title :{{list.adress}} </h2>
+            <h2>City : {{list.city}} - {{list.realcity.city_name}}  </h2>
+            <h2> Source  :  {{list.store}} </h2>    
+            <h2> Product :  {{list.product}}  </h2>
+            <h2> Quantity:  {{list.quantity}}  -  Price  :  {{list.price}} درهم </h2>
+            <h2> Note: {{list.note}}  </h2>
+</div>
+
+<div class="more_detail_loaded" style="margin-top:20px;" >
+<table class="table">
+    <thead>
+        <th><b>Product</b></th>
+        <th><b>Quantity</b></th>
+        <th><b>Price </b></th>
+    </thead>
+    <tbody>
+        {% for item in list.products %}
+        <tr>
+            <td>{{item.product.name}}</td>
+            <td>{{item.quanity }}</td>
+            <td>{{item.price}}</td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+</div>
+
+
+      

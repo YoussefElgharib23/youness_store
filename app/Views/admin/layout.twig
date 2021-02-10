@@ -1,0 +1,281 @@
+{% spaceless %}{% endspaceless %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Control Board</title>
+    <meta charset="utf-8">
+    <meta charset="adminlink" content="{{url.base}}admin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" Control Board  ">
+    <link rel="icon" type="image/x-icon" href="{{assets}}admin/images/favicon.png" /> 
+    <link rel="stylesheet" type="text/css" href="{{assets}}admin/css/rtl.css?v={{config.version}}" />
+
+    
+    
+ </head>
+
+ 
+<body dir="rtl"  class='{% if admin %} admin-logged {% endif %}' >
+
+  {% include "admin/elements/navbar.twig" %}
+
+
+<div class="modal"  id="editListModal"  tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">edit request </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+
+<div class="modal"  id="addneworder"  tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> Add a new order </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="{{path_for('admin.create')}}" method='POST'>
+
+
+          <div class="form-group row">
+            <label for="name" class="col-4 col-form-label">Name</label> 
+            <div class="col-8">
+              <input id="name" name="name" type="text" class="form-control"  required="required">
+            </div>
+          </div>
+
+
+          <div class="form-group row">
+            <label for="phone" class="col-4 col-form-label">Phone number</label> 
+            <div class="col-8">
+              <input id="tel" name="tel" placeholder=" Phone number" type="text" class="form-control" required="required"   >
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="name" class="col-4 col-form-label">Address</label> 
+            <div class="col-8">
+              <input id="adress" name="adress" type="text" class="form-control" required="required">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="name" class="col-4 col-form-label">City</label> 
+            <div class="col-8">
+              <input id="city" name="city" type="text" class="form-control" required="required">
+            </div>
+          </div>
+
+
+
+          <div class="form-group row">
+            <label for="product" class="col-4 col-form-label">Product</label> 
+            <div class="col-8">
+              <select id="productSELECT" name="product" data-result='{{list.productID}}' name="productID" class="form-control">
+                {% for product in ALLPRODUCTS %}
+                <option value="{{product.id}}">{{product.name}}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="quantity" class="col-4 col-form-label">Quantity</label> 
+            <div class="col-8">
+              <input id="quantity" name="quantity" placeholder="Quantity" type="text" class="form-control" required="required"  >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="price" class="col-4 col-form-label">Price</label> 
+            <div class="col-8">
+              <input id="price" name="price" placeholder="Price" type="text" class="form-control" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="color" class="col-4 col-form-label">Color</label> 
+            <div class="col-8">
+              <input id="color" name="color" placeholder="Color" type="text" class="form-control" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="text1" class="col-4 col-form-label">Size</label> 
+            <div class="col-8">
+              <input id="text1" name="size" placeholder="Size" type="text" class="form-control" >
+            </div>
+          </div> 
+          <div class="form-group row">
+            <div class="offset-4 col-8">
+              <button name="submit" type="submit" class="btn btn-block btn-primary">   Saving information    </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+       
+        <!-- sidbar -->
+        {% include "admin/elements/sidebar.twig" %} 	
+
+        
+        
+        {% block content %} {% endblock %}
+        
+		</div>
+	  </div>
+
+    <!-- JS script -->
+    <script type="text/javascript" src="{{assets}}admin/js/all.js?v={{config.version}}"></script> 
+    <script type="text/javascript" src="{{assets}}admin/js/clipboard.min.js?v={{config.version}}"></script>
+    <script type="text/javascript" src="{{assets}}admin/js/bawaba.js?v={{config.version}}"></script>
+    <script src="{{assets}}/admin/ckeditor/ckeditor.js?v={{config.version}}"></script>
+
+   
+   
+   
+    <form method='post' action="/admin/export/excel" id='exportThem' >
+      <input type="hidden" name='is' class='ids'>
+    </form>
+
+   
+   
+   
+   
+    <input type="hidden" id="selectedRows" />
+
+    <script>
+    
+    
+   $('body #exportliaData').click(function(){
+        var selected = $('#selectedRows').val();
+        $('body #exportThem  .ids').val(selected);
+        $('body #exportThem').submit();
+    });
+    
+    
+    $('body .delte_tkf').click(function(){
+            var id = $(this).attr('data-id');
+
+           jQuery.ajax({
+                url: '/admin/remove/item',
+                type : 'post',
+                data: {'id':id},
+                dataType: "html",
+                success: function( response ) {
+                    $('#row_cmd_'+id).remove();
+                },
+               
+          });
+    
+    });
+    
+    
+        
+    $('body .addneworder').click(function(){
+            $('#addneworder').modal('show');    
+    });
+
+
+    $('body .edit_airf').click(function(){
+            var id = $(this).attr('data-id');
+
+           jQuery.ajax({
+                url: '/admin/load/list',
+                type : 'post',
+                data: {'id':id},
+                dataType: "html",
+                success: function( response ) {
+                    
+                    $('#editListModal .modal-body').html(response);
+                    $('#editListModal').modal('show');
+                    var product = $('#editListModal #productSELECT').attr('data-result');
+                    $('#editListModal #productSELECT').val(product);
+                    
+                    
+                    
+                    console.log(response); 
+                    //$('#row_cmd_'+id).remove();
+                },
+               
+          });
+    
+    });
+    
+    
+    
+    
+    
+    
+    
+    $('body .change_statue').change(function(){
+            var id = $(this).attr('data-id');
+            var statue = $(this).val();
+            
+           jQuery.ajax({
+                url: '/admin/change/statue',
+                type : 'post',
+                data: {'id':id, 'statue':statue},
+                dataType: "html",
+                success: function( response ) {
+                   location.reload(); 
+                },
+               
+          });
+    
+    });
+    
+
+
+    
+    
+    
+    
+    
+    if($('#posteditor').length){ 
+      CKEDITOR.replace( 'posteditor', { 
+       language: 'ar'  , 
+        height: 400,
+      });
+      
+    CKEDITOR.config.extraPlugins = 'colorbutton';
+    CKEDITOR.config.colorButton_colors = 'CF5D4E,454545,FFF,DDD,CCEAEE,66AB16,#4286f4,#b92b27,#F9D423,#e65c00';
+      
+    }
+
+    if($('.editcategory').length){
+      var select = $('.editcategory').attr('data-value');
+      $('.editcategory').val(select);
+    }
+    
+
+    </script>   
+</body>
+</html>
+
+                  

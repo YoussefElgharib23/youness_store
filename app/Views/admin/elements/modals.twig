@@ -1,0 +1,372 @@
+
+
+<!-- edit Spent ADS Modal -->
+<div class="modal fade" id="SpentModalEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close " data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">  Advertisements   </h4>
+      </div>
+      <div class="modal-body text-center">
+         <input type="text" class="form-control spentFB" id='spentFB'>
+         <input type="hidden" id='daySpent' >
+         <a href="javascript:;" id='savespent' class="btn btn-block btn-success">Register ads</a>
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="DeliverTimeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> Delivery date</h4>
+      </div>
+      <div class="modal-body">
+
+       <div class="form" id="TimeAfterForm" >
+             
+            <div class="form-group">
+                    <label for="">
+                   Please specify when to send
+                    </label>
+            </div> 
+            <div class="form-group timing recall_houres_container">
+                After how many minutes
+                <input type="number" id='recall_houres' placeholder="Enter the number of minutes" />
+            </div>
+            <div class="form-group timing recall_days_container">
+                بعد يوم
+                <input type="text" readonly='true' id='recall_days'  class='datepicker'  placeholder="Enter the number of days"   />
+            </div>
+           </div>
+         <div class="block" style="display: block; margin-top:35px;">
+          <button href="javascript:;" class="btn btn-success btn-lg btn-block"  data-id='' id="confirm_my_order_please" >
+  Confirm
+  request
+          </button>
+        </div>
+
+      </div>
+      
+      
+     
+      
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- Spent ADS Modal -->
+<div class="modal fade" id="SpentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close " data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">  Ads   </h4>
+      </div>
+      <div class="modal-body text-center">
+         <input type="text" class="form-control spentFB" id='spentFB'>
+         <input type="hidden" id='daySpent' >
+         <a href="javascript:;" id='savespent' class="btn btn-block btn-success">Register ads</a>
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- Modal Send SMS -->
+<div class="modal fade" id="sendSMS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close " data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> Send  SMS  </h4>
+      </div>
+      <div class="modal-body text-center">
+          <img src="https://i.imgur.com/B9DVq3B.png" alt="">
+          <h2>Please send a message, and don't forget to send it right away, please  </h2>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Modal Cash History -->
+<div class="modal fade" id="HistoryModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">History</h4>
+      </div>
+      <div class="modal-body">
+ 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Canceled -->
+<div class="modal fade" id="modal_see_reason" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close " data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> Reason for cancellation   </h4>
+      </div>
+      <div class="modal-body">
+          <div class="reason_here"></div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Modal Info not completed -->
+<div class="modal fade" id="InfoNeeded" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close " data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">  Attention </h4>
+      </div>
+      <div class="modal-body">
+         Please complete the important information before accepting the request
+          <br>
+          The following fields must be filled
+          <ul>
+            <li>Address</li>
+            <li>City</li>
+            <li>Client Name </li>
+          </ul>
+          
+          <a href="" class="btn btn-block btn-success editBtn"> Editing request and entering data </a>
+       
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- Modal Info -->
+<div class="modal fade" id="loadData" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Customer information  </h4>
+      </div>
+      <div class="modal-body">
+          Loading information ...
+      </div>
+  </div>
+</div>
+</div>
+
+    
+<!-- Modal Canceled -->
+<div class="modal fade" id="adminEmployeeCancel" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close " data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">What is the reason for canceling   </h4>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+              <textarea  class="form-control" id="the_cancel_reason" cols="30" rows="10"></textarea>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-link" data-dismiss="modal">Back</a>
+        <a type="button" id="send_reason" class="btn btn-primary">Cancel and send the reason </a>
+    </div>
+  </div>
+</div>
+</div>
+    
+<!-- Modal Recall -->
+<div class="modal fade" id="AdminRecallModal" >
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Date of reconnection </h4>
+      </div>
+      <div class="modal-body">
+      <div class="form" id="TimeAfterForm" >
+             
+            <div class="form-group">
+                    <label>Please specify the time at which to call   </label>
+            </div> 
+            <div class="form-group timing recall_houres_container">
+               After how many minutes
+                <input type="number" id='recall_houres' placeholder="Enter the number of minutes" />
+            </div>
+            <div class="form-group timing recall_days_container">
+             after   day
+                <input type="text" readonly='true' id='recall_days'  class='datepicker'       placeholder="ادخل عدد الأيام" />
+            </div>
+           </div>
+          <div class="block" style="display: block;">
+              <a href="javascript:;"    class="btn btn-success btn-lg btn-block mg-t-15" id="make_sure_recall" >تأكيد</a>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- History Modal -->
+<div class="modal fade" id="HistoryModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">History</h4>
+      </div>
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div id="ExportExcelModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> Extract in excel</h4>
+      </div>
+      <div class="modal-body">
+          <form class="form-horizontal" method='post' action="{{path_for('lists.export')}}" autocomplete="off">
+        <div class="col-md-12"> 
+                <fieldset class="content-group">
+
+                        <div class="form-group">
+                            <label class="control-label">Employee selection  </label>
+                            <select name="employee" class='form-control'>
+                            {% for item in  ALLEMPLOYEES %}
+                            <option value="{{item.id}}">{{item.username}}</option>
+                            {% endfor %}
+                            </select>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label class="control-label">Selecting status   </label>
+                            <select name="type" class='form-control'>
+                                <option value="waiting">Processing </option>
+                                <option value="canceled">Canceled requests</option>
+                                <option value="recall">  Requests to reconnection </option>
+                                <option value="NoAnswer"> Requests are not answered </option>
+                                <option value="NoAnswer_1"> does not answer the first stage</option>
+                                <option value="NoAnswer_2">  does not answer the second stage  </option>
+                                <option value="NoAnswer_3"> does not answer the third stage </option>
+                                <option value="NoAnswer_4">     does not answer the fourth stage </option>
+                                <option value="confirmation"> Approval Committee</option>
+                            </select>
+                        </div>
+                        
+                         
+                        <div class="form-group">
+                            <label class="control-label">   Choose city </label>  
+                            <select name="city" class='form-control'>
+                            {% for city in  ALLCITIES %}
+                            <option value="{{city.id}}">{{city.city_name}}</option>
+                            {% endfor %}
+                            <option value="all">All</option>
+                            </select>
+                        </div>
+                        
+                        
+                          
+                </fieldset>
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-block">
+                 Extracting requests
+                        <i class="icon-arrow-left13 position-right"></i>
+                    </button>
+                </div>
+
+    </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div id="ConfirmationExportExcelModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"> As per distributor </h4>
+      </div>
+      <div class="modal-body">
+          <form class="form-horizontal" method='post' action="{{path_for('lists.exportConfirmation')}}" autocomplete="off">
+        <div class="col-md-12"> 
+                <fieldset class="content-group">
+
+                          <input type="hidden" name="type" value="confirmation" />
+                        <div class="form-group">
+                            <label class="control-label" > Choosing distributor </label>
+                            <select name="deliver" class='form-control'>
+                            {% for item in  ALLDELIVERS %}
+                            <option value="{{item.id}}">{{item.username}}</option>
+                            {% endfor %}
+                            </select>
+                        </div>
+                        
+                       
+                      
+                          
+                </fieldset>
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary btn-block">
+                  Extracting requests
+                        <i class="icon-arrow-left13 position-right"></i>
+                    </button>
+                </div>
+
+    </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+
+  </div>
+</div>

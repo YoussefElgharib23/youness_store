@@ -1,0 +1,86 @@
+ ,nom et prenom,num de telephone,Ville,Adresse,Ref,Commande,quantity,prix (DH)
+19/11/2019 - 07:10 UTC,kkk,0333333333,mmm,mmm,منظف ​​بخاخ الرغوة متعدد الوظائف imrashop)),سعر الوحدة: 149,1,168
+13/09/2019 - 03:56 UTC,lmkdlmkmlkml,77777777777,6565,66565656,SOLO,سعر الوحدة: 199,1,199
+15/09/2019 - 19:01 UTC,mldkqlmlmklk,0622389753,Agadir,Agadir Ait Melloul Kolea,SLIM,سعر الوحدة: 199,1,199
+15/09/2019 - 19:01 UTC,mlslmdsklm,777777777777,lmklmklmk,5dlkqslmkm,CLIMATISEUR,سعر الوحدة: 499,1,499
+15/09/2019 - 19:03 UTC,يفقيفغفغ,06625431,غعفه_,عع,CLIMATISEUR,سعر الوحدة: 499,1,499
+15/09/2019 - 23:55 UTC,Rachid ,0661657707,Agadir ,Dakhla agadir,montblonc,سعر الوحدة: 199,1,199
+16/09/2019 - 11:09 UTC,حسن كريمي,0668782926,البيضاء,حي الرحمة م.م هناء الخاصة الزنقة12الرقم292مولاي رءرد,montblonc,سعر الوحدة: 199,1,199
+16/09/2019 - 12:55 UTC,عبدالهادي,0661728808,البيضاء,مدرسة ابن زيدون،حي الشرف سيدي مومن,montblonc,سعر الوحدة: 199,1,199
+16/09/2019 - 19:36 UTC,Abderrahim,0661213156,Casa,Barnosi,montblonc,سعر الوحدة: 199,1,199
+16/09/2019 - 22:04 UTC,ضريضر عبدالرحيم ,0662192930,الدار البيضاء ,البريد بنك الدار البيضاء الفداء ,montblonc,سعر الوحدة: 199,1,199
+17/09/2019 - 12:19 UTC,Said bougataya ,0661458868,Casablanca ,328 lotissement hadj fateh oulfa Casablanca ,montblonc,سعر الوحدة: 199,1,199
+17/09/2019 - 12:34 UTC,Boukdir mustapha,0661296700,Casa,Hay traik r 39 n 19 sid bernossi casa ,KILLER LAMP,سعر الوحدة: 249,1,249
+17/09/2019 - 12:49 UTC,Balazi Mohamed ,0661120555,Casablanca  ,M appeler sur mon téléphone ,KILLER LAMP,سعر الوحدة: 249,1,249
+17/09/2019 - 14:01 UTC,Casa,0651089213,Casa,Casa,KILLER LAMP,سعر الوحدة: 249,1,249
+17/09/2019 - 14:38 UTC,GHAZI ALI ,0667503542,midelt, centre  boumia  province  midelt,montblonc,سعر الوحدة: 199,1,199
+17/09/2019 - 14:44 UTC,احمد,0664999491,الدار البيضاء,تجزئة مربوحة عين الشق ,montblonc,سعر الوحدة: 199,1,199
+17/09/2019 - 15:59 UTC,Hamid edriaf,067857536,Marrakech,Hay el massira né  339,رشاشة دوش ,سعر الوحدة: 299,1,299
+17/09/2019 - 20:24 UTC,عبد الهادي,0675931483,الدار البيضاء ,الدار البيضاء ,montblonc,سعر الوحدة: 199,1,199
+18/09/2019 - 00:00 UTC,Youssef,0661323843,Mohammedia ,Mohammedia ,KILLER LAMP,سعر الوحدة: 249,1,249
+18/09/2019 - 00:56 UTC,عائشة,0668050193,أكادير,حي سلام ,رشاشة دوش ,سعر الوحدة: 299,1,299
+18/09/2019 - 06:00 UTC,مسود احمد ,0661110632,طنجة ,شارعلافاييت رقم 64 ,KILLER LAMP,سعر الوحدة: 249,1,249
+18/09/2019 - 07:36 UTC,نزهة يعكوبي,0665184329,طنجة,اقامة الضحى الوفاء 2 عمارة 7 الطابق5 رقم 21,KILLER LAMP,سعر الوحدة: 249,1,249
+18/09/2019 - 09:53 UTC,Miloud,0675452546,Tanja,Mojama alfajr d13,KILLER LAMP,سعر الوحدة: 249,1,249
+18/09/2019 - 12:44 UTC,رشيد,0687716095,اكادير,حي حمو ازروايت ملول,montblonc,سعر الوحدة: 199,1,199
+18/09/2019 - 14:55 UTC,Mouad,+212624162780,Tanger,Tanger,رشاشة دوش ,سعر الوحدة: 299,1,299
+18/09/2019 - 16:07 UTC,hassan ,0667913543,agadir,tmssia,KILLER LAMP,سعر الوحدة: 249,1,249
+18/09/2019 - 16:07 UTC,Aomar ,0661178093,Essaouira ,Barakat Mohamed ,رشاشة دوش ,سعر الوحدة: 299,1,299
+18/09/2019 - 16:49 UTC,Youssef Laghrib,0666278839,طنجة,المجمع الحسني 3 الراحة 4 الطابق الأول رقم 26 اݣزناية ,KILLER LAMP,سعر الوحدة: 249,1,249
+18/09/2019 - 17:03 UTC,Miloud,0675452546,Mojamaa alfajr tanja,Tma25tanjaMojama alfajr d13bar,KILLER LAMP,سعر الوحدة: 249,1,249
+18/09/2019 - 18:14 UTC,سعد ,0660175994,تمارة,هرهورة,montblonc,سعر الوحدة: 199,1,199
+18/09/2019 - 22:53 UTC,أحمد رشدي ,0661858803,بين طماريس3 وسيدي رحال,تجزئة النزهة البراهمة ميراس رقم 282,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 00:54 UTC,Aarab abdelghafour,0661106281,Chatoka aytbha,Dawar tin ali oadi balfaa,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 04:22 UTC,soulaimane,0622359753,lkll,"sqlkalk,lkkl",رشاشة دوش ,سعر الوحدة: 299,1,299
+19/09/2019 - 04:26 UTC,soulaimane,0665389753,Agadir,Agadir Ait Melloul Kolea,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 13:31 UTC,علاء ,0623481434,عين السبع,سارع ميمزز,montblonc,سعر الوحدة: 199,1,199
+19/09/2019 - 17:41 UTC,Lhrouchi Noureddine ,0633268200,Agadir,N565 hôte font ,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 17:45 UTC, الماسي نورالدين ,0661453984,مراكش,النخيل,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 20:51 UTC,Mohmed,0604476882,الدار البيضاء,Brnoussi,montblonc,سعر الوحدة: 199,1,199
+19/09/2019 - 21:03 UTC,Abd lali,0666089633,Markx,Tktart,montblonc,سعر الوحدة: 199,1,199
+19/09/2019 - 21:11 UTC,Mohamed,0613693595,Bouskoura,Bouskoura   sontr,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 21:16 UTC,Mohamed,0613693595,Bouskoura,Sontr   bouskoura,SOLO,سعر الوحدة: 199,1,199
+19/09/2019 - 22:04 UTC,Youssef,0661218362,Agadir ,Ap 1bis Im33 Résidence Islane GH6 hay mohammade Agadir ,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 22:09 UTC,Hamid Izahg,0664519963,Casablanca,bd 10 mars nr 165,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 23:01 UTC,Ali,0661154541,Casa,64 rue loudaya la Villette ,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 23:38 UTC,samira,0635268364,mohammediya,adress 4A LT riad essalam ETG RD a,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 23:54 UTC,Said Marzouki,0662829101,الدارالبيضاء,مجموعة الأمان عمارة 178 الطابق الثاني شقة 11عين السبع,KILLER LAMP,سعر الوحدة: 249,1,249
+19/09/2019 - 23:58 UTC,لبهيلي فاطمة ,0668017624,الدار البيضاء ,27 مكرر  درب لكرم عين السبع ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 00:01 UTC,Brahim,0648281035,Casablanca ,Prestige bouskoura  immobile 6 apt 9 2etg,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 00:44 UTC,Soufian,0666458104,Casa,Sidi otman,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 00:57 UTC,Noureddine,0696275619,Casablanca,Garajje allal,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 01:08 UTC,عبد الغني,0669204676,مراكش,درب الحساسنةسيدي يوسف بن علي شارع مبارك,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 01:38 UTC,Nourdin,0663600434,Tanger,Malossa ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 01:52 UTC,ABBADI  MSTAFA,0762454415,AL  MOHAMADIYA,AYN  HARODA,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 02:11 UTC,Hicham,0606111854,Tengar,Al3wma,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 02:33 UTC,Taoufiq,0661338482,Casablanca,Ain Chock ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 05:15 UTC,DOUKKALE.. MOHAMED,0661693025,EKLIMeJADIDA,OULADFRJ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 06:25 UTC,محمد سهمي,0668124243,الدار البيضاء,لساسفة,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 06:40 UTC,نواوري أحمد ,2126689237,تمنصورت ,نخيل 4 سكنيية عمارة 60 شقة رقم س ا ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 06:55 UTC,El atiq alaoui,0661727842,Casa,Bank poupiler,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 07:10 UTC,Ladiji Mostafa,0676203883,Caca ,"BOlc619 N,,2",KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 07:16 UTC,سعد مينة,0600695010,الدارالبيضاء ,البريد بنك,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 07:17 UTC,Abdelmmajid,0668207042,Tanger,Kawasim,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 08:08 UTC,عادل جدي,0668465715,الدر البيضاء ,زنقه إدريس الجاي ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 08:13 UTC,حسن ,0662151423,الدار البيضاء ,عين الشق ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 09:55 UTC,طارق شكري ,0661281623,اكادير,501G2 إقامة الصفا 1و2 الحي المحمدي ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 11:22 UTC,Mohamed,0679825685,Casa, Sidi moumane,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 12:08 UTC,Salah hamid,0668307155,الدار البيضاء ,إقامة العطور زنقة 2عمارة 57 رقم 1سيدي مومن ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 12:50 UTC,Hakim,0707462951,Casa,Sidi momn m5 zn9a 3,montblonc,سعر الوحدة: 199,1,199
+20/09/2019 - 13:39 UTC,Amir,0620261819,Tanger,Lalla chafia Tanger,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 13:48 UTC,حسن الصادق,0602258599,دوارقنظرة إسن,جماعة الدير قيادة سيدي موسى الحمري,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 15:32 UTC,Zakaria boutalb,0663811566,الدار البيضاء,حي الفضل زنقة 41,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 16:01 UTC,Najib,0661728926,Casablanca,Tit mellil,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 16:05 UTC,Hafid ,0606464565,Tanger ,Deyar tanger 3mara 2 masnana ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 16:36 UTC,Abdelouahed,06257148007,Tanger,Al irfan 1,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 16:57 UTC,El farissi my driss,0661257530,Imintanout,Imintanout,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 16:59 UTC,Jamal,0661065955,Casablanca,Hay salaria rue 12 villa num 5,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 18:07 UTC,خليل ,0661281852,أكادير ,صونبا فيكتور ت رقم ٦,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 19:17 UTC,مسعود مديح ,0644009191,الدار البيضاء مدينه قديمه,زنقة تزنيت رقم الدار :9 :,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 19:37 UTC,حميد,0662607956,طنجة,العرفان 2 مجموعة  18,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 19:40 UTC,محمد بناني ,0671946721,الدار البيضاء ,زنقة ابن بابك المعاريف ,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 19:43 UTC,حسن,0690087325,الدار البيضاء,درب عمر,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 19:47 UTC,Omar,0661886224,مراكش,مراكش المحاميد,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 19:47 UTC,حسن,0690087325,دار البيضاء,درب عمر,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 19:49 UTC,حسن,0690087325,الدار البيضاء,درب عمر,KILLER LAMP,سعر الوحدة: 249,1,249
+20/09/2019 - 20:06 UTC,mohamed alaoui,+336611560769,Casablanca,5 Rue De La Mer Adriatique,KILLER LAMP,سعر الوحدة: 249,1,249
